@@ -1,7 +1,8 @@
 import React from 'react';
+import { Col, Row } from 'react-bootstrap';
 
 export const ItemBlock = (props) => {
-    const { title, info, location } = props;
+    const { title, info, location, institution } = props;
     if (props.children) {
         if (title) {
             return (
@@ -22,12 +23,20 @@ export const ItemBlock = (props) => {
     } else {
         if (location) {
             return (
-                <div style={{ marginBottom: 10, width:'100%' }}>
-                    <label style={{ fontWeight: 'bold' }}>{title}</label>
-                    <label style={{ alignSelf: 'flex-end' }}>{location}</label>
-                    <br></br>
-                    <label>{info}</label>
-                </div>
+                <Row style={{ marginBottom: 10, width: '100%' }}>
+                    <Col md={8}>
+                        <label style={{ fontWeight: 'bold' }}>{title}</label>
+                        <br></br>
+                        <label>{info}</label>
+                    </Col>
+                    <Col className="justify-content-md-center" md={4}>
+                        <label style={{ textAlign: 'center' }}>
+                            <label style={{ fontWeight: 'bold' }}>{institution}</label>
+                            <br></br>
+                            {location}
+                        </label>
+                    </Col>
+                </Row>
             )
         } else {
             return (
