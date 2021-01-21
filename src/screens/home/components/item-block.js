@@ -29,8 +29,8 @@ export const ItemBlock = (props) => {
                         <br></br>
                         <label>{info}</label>
                     </Col>
-                    <Col className="justify-content-md-center" md={4}>
-                        <label style={{ textAlign: 'center' }}>
+                    <Col md={4}>
+                        <label>
                             <label style={{ fontWeight: 'bold' }}>{institution}</label>
                             <br></br>
                             {location}

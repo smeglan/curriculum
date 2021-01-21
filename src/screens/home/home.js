@@ -61,17 +61,88 @@ export class Home extends PureComponent {
                             </ItemBlock>
                         </Block>
                     </Col>
-                    <Col md={6} style={{ borderLeftStyle: 'solid', borderLeftWidth: 1, borderRightStyle:'solid', borderRightWidth: 1 }}>
+                    <Col md={6} style={{ borderLeftStyle: 'solid', borderLeftWidth: 1, borderRightStyle: 'solid', borderRightWidth: 1 }}>
                         <Block title="PERFIL">
-                            <ItemBlock></ItemBlock>
+                            <ItemBlock>
+                                <p>
+                                    Tecnico en desarrollo de software y estudiante de ultimo semestre de ingenieria de sistemas y computación, con mas de un año de experiencia en desarrollo e integración de aplicaciones web y móvil, bajo frameworks basados en node.js.
+                                    Responsable, autodidacta, honesto y eficaz en tareas de desarrollo.
+                                </p>
+                            </ItemBlock>
                         </Block>
                         <Block title="EDUCACIÓN">
                             <ItemBlock
                                 title="Ingenieria de sistemas y computación"
                                 institution="Universidad de Caldas"
                                 location="Manizales"
-                                info="2013-2021"
+                                info="2013 - presente"
                             />
+                            <ItemBlock
+                                title="Automatización en procesos industriales"
+                                institution="SENA"
+                                location="Manizales"
+                                info="2017"
+                            />
+                            <ItemBlock
+                                title="Técnico en programación de software"
+                                institution="SENA"
+                                location="Manizales"
+                                info="2010 - 2012"
+                            />
+                        </Block>
+                        <Block title="EXPERIENCIA LABORAL">
+                            <ItemBlock
+                                title="Ingeniero desarrollador de software"
+                                institution="Reactiva soporte y desarrollo"
+                                location="Manizales"
+                                info="Enero 2020 - presente"
+                            />
+                            <ItemBlock
+                                title="Desarrollador de software"
+                                institution="Desarrollo Eficaz"
+                                location="Manizales"
+                                info="Julio 2020 - Septiembre 2020"
+                            />
+                            <ItemBlock
+                                title="Practicante desarrollador de software"
+                                institution="Reactiva soporte y desarrollo"
+                                location="Manizales"
+                                info="Agosto 2019 - Enero 2020"
+                            />
+                        </Block>
+                        <Block title="REFERENCIAS">
+                            <Row>
+                                <Col>
+                                    <h4>Laborales</h4>
+                                    <ItemBlock
+                                        title="Francizco Aristizabal"
+                                        info="3013066169"
+                                    />
+                                    <ItemBlock
+                                        title="TELÉFONO"
+                                        info="3104395956"
+                                    />
+                                    <ItemBlock
+                                        title="TELÉFONO"
+                                        info="3104395956"
+                                    />
+                                </Col>
+                                <Col>
+                                    <h4>Personales</h4>
+                                    <ItemBlock
+                                        title="TELÉFONO"
+                                        info="3104395956"
+                                    />
+                                    <ItemBlock
+                                        title="TELÉFONO"
+                                        info="3104395956"
+                                    />
+                                    <ItemBlock
+                                        title="TELÉFONO"
+                                        info="3104395956"
+                                    />
+                                </Col>
+                            </Row>
                         </Block>
                     </Col>
                     <Col md={2}>
@@ -98,6 +169,10 @@ const Competences = [
     },
     {
         title: "React.js",
+        value: 5
+    },
+    {
+        title: "React Native",
         value: 5
     },
     {
