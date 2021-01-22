@@ -10,9 +10,6 @@ import html2canvas from 'html2canvas';
 import jsPDF from 'jspdf';
 import { faFileDownload } from '@fortawesome/free-solid-svg-icons';
 export class Home extends PureComponent {
-    constructor() {
-        super();
-    }
 
     printDocument = () => {
         const input = document.getElementById('divToPrint');
@@ -111,18 +108,21 @@ export class Home extends PureComponent {
                                 institution="Reactiva soporte y desarrollo"
                                 location="Manizales"
                                 info="Enero 2020 - presente"
+                                description="Desarrollo, mantenimiento, soporte e integración de aplicativos web y móvil basados en React.js, diseño de sistemas con pasarelas de pago y capacitación de personal."
                             />
                             <ItemBlock
                                 title="Desarrollador de software"
                                 institution="Desarrollo Eficaz"
-                                location="Manizales"
+                                location="Medellin"
                                 info="Julio 2020 - Septiembre 2020"
+                                description="Desarrollo e integración de pagina web(frontend y backend) con integración con payU para tatuadores de manera remota."
                             />
                             <ItemBlock
                                 title="Practicante desarrollador de software"
                                 institution="Reactiva soporte y desarrollo"
                                 location="Manizales"
                                 info="Agosto 2019 - Enero 2020"
+                                description="Desarrollo, matenimiento e integración de aplicativos moviles basados en Appceletor, labores tecnicas de mantenimiento."
                             />
                         </Block>
                         <Block title="REFERENCIAS">

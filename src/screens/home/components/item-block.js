@@ -2,7 +2,7 @@ import React from 'react';
 import { Col, Row } from 'react-bootstrap';
 
 export const ItemBlock = (props) => {
-    const { title, info, location, institution } = props;
+    const { title, info, location, institution, description } = props;
     if (props.children) {
         if (title) {
             return (
@@ -24,12 +24,15 @@ export const ItemBlock = (props) => {
         if (location) {
             return (
                 <Row style={{ marginBottom: 10, width: '100%' }}>
-                    <Col md={8}>
+                    <Col md={9}>
                         <label style={{ fontWeight: 'bold' }}>{title}</label>
                         <br></br>
-                        <label>{info}</label>
+                        <label>
+                            {info}
+                            {description?<label>{description}</label>:<label></label>}
+                        </label>
                     </Col>
-                    <Col md={4}>
+                    <Col md={3}>
                         <label>
                             <label style={{ fontWeight: 'bold' }}>{institution}</label>
                             <br></br>
