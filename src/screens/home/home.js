@@ -6,16 +6,31 @@ import { faGithub, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { HeaderBlock } from './components/header-block';
 import { Competence } from './components/competence';
-
+import html2canvas from 'html2canvas';
+import jsPDF from 'jspdf';
+import { faFileDownload } from '@fortawesome/free-solid-svg-icons';
 export class Home extends PureComponent {
     constructor() {
         super();
     }
 
+    printDocument = () => {
+        const input = document.getElementById('divToPrint');
+        html2canvas(input)
+            .then((canvas) => {
+                const imgData = canvas.toDataURL('image/png');
+                const pdf = new jsPDF();
+                pdf.addImage(imgData, 'JPEG', 0, 0);
+                // pdf.output('dataurlnewwindow');
+                pdf.save("download.pdf");
+            }
+            );
+    }
+
     render() {
         return (
             <>
-                <Row className="justify-content-md-center">
+                <Row id="divToPrint" className="justify-content-md-center">
                     <Col md={12}>
                         <HeaderBlock title="SEBASTIÁN NOREÑA MEGLAN" subtitle="DESARROLLADOR DE SOFTWARE"></HeaderBlock>
                     </Col>
@@ -32,10 +47,10 @@ export class Home extends PureComponent {
                         </Block>
                         <Block title='ENLACES'>
                             <ItemBlock>
-                                <Button style={{ marginRight: 10 }} variant="outline-dark">
+                                <Button href="https://github.com/smeglan" style={{ marginRight: 10 }} variant="outline-dark">
                                     <FontAwesomeIcon icon={faGithub} />
                                 </Button>
-                                <Button variant="outline-dark">
+                                <Button href="https://www.linkedin.com/in/sebastian-noreña-meglan-50534b199/" variant="outline-dark">
                                     <FontAwesomeIcon icon={faLinkedinIn} />
                                 </Button>
                             </ItemBlock>
@@ -119,27 +134,23 @@ export class Home extends PureComponent {
                                         info="3013066169"
                                     />
                                     <ItemBlock
-                                        title="TELÉFONO"
-                                        info="3104395956"
+                                        title="Darwin Salazar Ramirez"
+                                        info="3137752895"
                                     />
                                     <ItemBlock
-                                        title="TELÉFONO"
-                                        info="3104395956"
+                                        title="Cristian Camilo Gutierrez"
+                                        info="3104629798"
                                     />
                                 </Col>
                                 <Col>
                                     <h4>Personales</h4>
                                     <ItemBlock
-                                        title="TELÉFONO"
-                                        info="3104395956"
+                                        title="Mateo Isaac Padierna"
+                                        info="3194066373"
                                     />
                                     <ItemBlock
-                                        title="TELÉFONO"
-                                        info="3104395956"
-                                    />
-                                    <ItemBlock
-                                        title="TELÉFONO"
-                                        info="3104395956"
+                                        title="Juan Manuel Zuluaga"
+                                        info="3187587898"
                                     />
                                 </Col>
                             </Row>
@@ -157,6 +168,9 @@ export class Home extends PureComponent {
                         </Block>
                     </Col>
                 </Row>
+                <Button onClick={this.printDocument} style={{ marginLeft: 20 }} variant="outline-dark">
+                    <FontAwesomeIcon icon={faFileDownload} /> PDF (Experimental)
+                </Button>
             </>
         )
     }
