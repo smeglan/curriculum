@@ -18,6 +18,7 @@ export class Home extends PureComponent {
                 const imgData = canvas.toDataURL('image/png');
                 const pdf = new jsPDF();
                 pdf.addImage(imgData, 'JPEG', 0, 0);
+                console.log("PDF");
                 // pdf.output('dataurlnewwindow');
                 pdf.save("download.pdf");
             }
