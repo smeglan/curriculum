@@ -126,6 +126,15 @@ export class Home extends PureComponent {
                                 description="Desarrollo, matenimiento e integración de aplicativos moviles basados en Appceletor, labores tecnicas de mantenimiento."
                             />
                         </Block>
+                        <Block title="CERTIFICACIONES">
+                            <ItemBlock
+                                title="Expert PRO PRINCIPIOS DE C#"
+                                institution="UA expert"
+                                location="Virtual"
+                                info="Febrero 2020"
+                                description=""
+                            />
+                        </Block>
                         <Block title="REFERENCIAS">
                             <Row>
                                 <Col>
