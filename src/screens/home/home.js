@@ -134,6 +134,13 @@ export class Home extends PureComponent {
                                 info="Febrero 2020"
                                 description=""
                             />
+                            <ItemBlock
+                                title="Google Cloud Platform Fundamentals: Core Infrastructure"
+                                institution="Coursera"
+                                location="Virtual"
+                                info="Febrero 2020"
+                                description=""
+                            />
                         </Block>
                         <Block title="REFERENCIAS">
                             <Row>
