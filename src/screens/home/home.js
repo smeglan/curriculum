@@ -6,23 +6,23 @@ import { faGithub, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { HeaderBlock } from './components/header-block';
 import { Competence } from './components/competence';
-import html2canvas from 'html2canvas';
+//import html2canvas from 'html2canvas';
 import jsPDF from 'jspdf';
-import { faFileDownload } from '@fortawesome/free-solid-svg-icons';
+//import { faFileDownload } from '@fortawesome/free-solid-svg-icons';
 export class Home extends PureComponent {
 
     printDocument = () => {
-        const input = document.getElementById('divToPrint');
-        html2canvas(input)
-            .then((canvas) => {
-                const imgData = canvas.toDataURL('image/png');
-                const pdf = new jsPDF();
-                pdf.addImage(imgData, 'JPEG', 0, 0);
-                console.log("PDF");
-                // pdf.output('dataurlnewwindow');
-                pdf.save("download.pdf");
-            }
-            );
+        const source = document.getElementById('divToPrint');
+        var doc = new jsPDF({
+            unit: 'mm',
+            format: 'a4',
+            putOnlyUsedFonts: true,
+            floatPrecision: 16 // or "smart", default is 16
+        });
+        //var source = window.document.getElementsByTagName("body")[0];
+        doc.html(source).then(pdf => {
+            doc.save("Hoja de vida - Sebastián Noreña Meglan")
+        }).catch(e => console.log(e));
     }
 
     render() {
@@ -69,12 +69,10 @@ export class Home extends PureComponent {
                                 <br></br>
                                 <label>Videojuegos</label>
                                 <br></br>
-                                <label>Streaming</label>
-                                <br></br>
                             </ItemBlock>
                         </Block>
                     </Col>
-                    <Col md={6} style={{ borderLeftStyle: 'solid', borderLeftWidth: 1, borderRightStyle: 'solid', borderRightWidth: 1 }}>
+                    <Col md={6} >
                         <Block title="PERFIL">
                             <ItemBlock>
                                 <p>
@@ -89,12 +87,6 @@ export class Home extends PureComponent {
                                 institution="Universidad de Caldas"
                                 location="Manizales"
                                 info="2013 - presente"
-                            />
-                            <ItemBlock
-                                title="Automatización en procesos industriales"
-                                institution="SENA"
-                                location="Manizales"
-                                info="2017"
                             />
                             <ItemBlock
                                 title="Técnico en programación de software"
@@ -131,15 +123,19 @@ export class Home extends PureComponent {
                                 title="Expert PRO PRINCIPIOS DE C#"
                                 institution="UA expert"
                                 location="Virtual"
-                                info="Febrero 2020"
-                                description=""
+                                info="Febrero 2021"
                             />
                             <ItemBlock
                                 title="Google Cloud Platform Fundamentals: Core Infrastructure"
                                 institution="Coursera"
                                 location="Virtual"
-                                info="Febrero 2020"
-                                description=""
+                                info="Febrero 2021"
+                            />
+                            <ItemBlock
+                                title="Automatización en procesos industriales"
+                                institution="SENA"
+                                location="Manizales"
+                                info="2017"
                             />
                         </Block>
                         <Block title="REFERENCIAS">
@@ -185,9 +181,9 @@ export class Home extends PureComponent {
                         </Block>
                     </Col>
                 </Row>
-                <Button onClick={this.printDocument} style={{ marginLeft: 20 }} variant="outline-dark">
+                {/*<Button onClick={this.printDocument} style={{ marginLeft: 20 }} variant="outline-dark">
                     <FontAwesomeIcon icon={faFileDownload} /> PDF (Experimental)
-                </Button>
+                </Button>*/}
             </>
         )
     }

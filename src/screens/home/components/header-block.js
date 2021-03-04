@@ -1,12 +1,17 @@
 import React from 'react';
+import { Col, Row } from 'react-bootstrap';
 
 export const HeaderBlock = (props) => {
     const { title, subtitle } = props;
     return (
-        <div style={styles.container}>
-            <h3 style={styles.text}>{title}</h3>
-            <p style={styles.text}>{subtitle}</p>
-        </div>
+        <Row style={{ marginTop: 20, marginBottom: 20 }}>
+            <Col md={{ span: 4, offset: 2 }}>
+                <div style={styles.container}>
+                    <h3 style={styles.text}>{title}</h3>
+                    <p style={styles.text}>{subtitle}</p>
+                </div>
+            </Col>
+        </Row>
     )
 }
 
@@ -18,8 +23,6 @@ const styles = {
         width: 450,
         justifyContent: 'center',
         padding: 10,
-        marginLeft: 240,
-        marginTop: 60,
         backgroundColor: '#404040',
         borderRadius: 10
     },
