@@ -203,6 +203,10 @@ const Competences = [
         value: 5
     },
     {
+        title: "C#",
+        value: 4
+    },
+    {
         title: "Express.js",
         value: 3
     },
@@ -213,10 +217,6 @@ const Competences = [
     {
         title: "Angular.js",
         value: 3
-    },
-    {
-        title: "C#",
-        value: 4
     },
     {
         title: "ASP.NET",
