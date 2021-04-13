@@ -1,8 +1,8 @@
 import React from 'react';
 import { Col, Row } from 'react-bootstrap';
-import { IReference } from '../../../../interfaces/references.interface';
-import { Block } from '../block';
-import { ItemBlock } from '../item-block';
+import { IReference } from '../../../interfaces/references.interface';
+import { Block } from './block';
+import { ItemBlock } from './item-block';
 
 interface IProps {
     title: string;

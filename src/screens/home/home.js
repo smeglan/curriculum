@@ -8,7 +8,7 @@ import { HeaderBlock } from './components/header-block';
 import { Competence } from './components/competence';
 //import html2canvas from 'html2canvas';
 import jsPDF from 'jspdf';
-import { References } from './components/references/references';
+import { References } from './components/references';
 import { faGlobe } from '@fortawesome/free-solid-svg-icons';
 //import { faFileDownload } from '@fortawesome/free-solid-svg-icons';
 export class Home extends PureComponent {
@@ -62,7 +62,7 @@ export class Home extends PureComponent {
         return (
             <>
                 {this.state.data && <Row id="divToPrint" className="justify-content-md-center">
-                    <Col md={12}>
+                    <Col md={12} lg={12}>
                         <HeaderBlock
                             title={this.state.data.name}
                             subtitle={this.state.data.position}
@@ -83,7 +83,7 @@ export class Home extends PureComponent {
                         ></HeaderBlock>
 
                     </Col>
-                    <Col md={2}>
+                    <Col md={12} lg={2}>
                         {this.state.data.information &&
                             <Block title={this.state.data.information.title}>
                                 {this.state.data.information.values.map((info, i) => {
@@ -133,7 +133,7 @@ export class Home extends PureComponent {
                             </ItemBlock>
                         </Block>}
                     </Col>
-                    <Col md={6} >
+                    <Col md={12} lg={6}>
                         {this.state.data.profile && <Block title={this.state.data.profile.title}>
                             <ItemBlock>
                                 <p>
@@ -196,7 +196,7 @@ export class Home extends PureComponent {
                             />
                         }
                     </Col>
-                    <Col md={2}>
+                    <Col md={12} lg={2}>
                         {this.state.data.competences && <Block title={this.state.data.competences.title}>
                             {this.state.data.competences.values.map((item, i) => {
                                 return (
