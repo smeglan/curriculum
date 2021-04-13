@@ -1,0 +1,199 @@
+{
+    "name": "SEBASTIÁN NOREÑA MEGLAN",
+    "position": "SOFTWARE DEVELOPER",
+    "information": {
+        "title": "INFORMATION",
+        "values": [
+            {
+                "title": "PHONE",
+                "value": "+573104395956"
+            },
+            {
+                "title": "COUNTRY",
+                "value": "COLOMBIA"
+            },
+            {
+                "title": "EMAIL",
+                "value": "sebastiannmeglan@gmail.com"
+            }
+        ]
+    },
+    "links": {
+        "title": "LINKS",
+        "values": {
+            "linkedIn": "https://www.linkedin.com/in/sebastian-noreña-meglan-50534b199/",
+            "github": "https://github.com/smeglan"
+        }
+    },
+    "languages": {
+        "title": "LANGUAGES",
+        "values": [
+            {
+                "title": "Spanish",
+                "value": 5
+            },
+            {
+                "title": "English",
+                "value": 3
+            },
+            {
+                "title": "Japanese",
+                "value": 2
+            }
+        ]
+    },
+    "hobbies": {
+        "title": "HOBBIES",
+        "values": [
+            "3D Modelling",
+            "Videogames"
+        ]
+    },
+    "profile": {
+        "title": "PROFILE",
+        "value": "Technician in software development and last semester student of systems and computing engineering, with more than one year of experience in development and integration of web and mobile applications, under frameworks based on node.js. Responsible, self-taught, honest and effective in development tasks."
+    },
+    "education": {
+        "title": "EDUCATION",
+        "values": [
+            {
+                "title": "Computer and systems engineering",
+                "institution": "Caldas University",
+                "location": "Manizales",
+                "date": "2013 - now"
+            },
+            {
+                "title": "Software programming technician",
+                "institution": "SENA",
+                "location": "Manizales",
+                "date": "2010 - 2012"
+            }
+        ]
+    },
+    "experience": {
+        "title": "WORK EXPERIENCE",
+        "values": [
+            {
+                "title": "Software developer engineer",
+                "institution": "Reactiva support and development",
+                "location": "Manizales",
+                "date": "Jan 2020 - presente",
+                "description": "Development, maintenance, support and integration of web and mobile applications based on React.js, system design with payment gateways and staff training."
+            },
+            {
+                "title": "Software developer",
+                "institution": "Desarrollo Eficaz",
+                "location": "Virtual",
+                "date": "July 2020 - Sep 2020",
+                "description": "Development and integration of web page (frontend and backend) with integration with payU for tattoo artists remotely."
+            }
+        ]
+    },
+    "certifications": {
+        "title": "CERTIFICATIONS",
+        "values": [
+            {
+                "title": "Expert PRO PRINCIPIOS DE C#",
+                "institution": "UA expert",
+                "location": "Virtual",
+                "date": "Feb 2021"
+            },
+            {
+                "title": "Google Cloud Platform Fundamentals: Core Infrastructure",
+                "institution": "Coursera",
+                "location": "Virtual",
+                "date": "Feb 2021"
+            },
+            {
+                "title": "Automation in industrial processes",
+                "institution": "SENA",
+                "location": "Manizales",
+                "date": "2017"
+            }
+        ]
+    },
+    "references": {
+        "title": "REFERENCES",
+        "values": {
+            "labor": {
+                "title": "Labor",
+                "values": [
+                    {
+                        "name": "Francizco Aristizabal",
+                        "phone": "3013066169"
+                    },
+                    {
+                        "name": "Darwin Salazar Ramirez",
+                        "phone": "3137752895"
+                    },
+                    {
+                        "name": "Cristian Camilo Gutierrez",
+                        "phone": "3104629798"
+                    }
+                ]
+            },
+            "personal": {
+                "title": "Personal",
+                "values": [
+                    {
+                        "name": "Mateo Isaac Padierna",
+                        "phone": "3194066373"
+                    },
+                    {
+                        "name": "Juan Manuel Zuluaga",
+                        "phone": "3187587898"
+                    }
+                ]
+            }
+        }
+    },
+    "competences": {
+        "title": "COMPETENCES",
+        "values": [
+            {
+                "title": "Javascript",
+                "value": 5
+            },
+            {
+                "title": "React.js",
+                "value": 5
+            },
+            {
+                "title": "React Native",
+                "value": 5
+            },
+            {
+                "title": "C#",
+                "value": 4
+            },
+            {
+                "title": "Express.js",
+                "value": 3
+            },
+            {
+                "title": "MongoDB",
+                "value": 3
+            },
+            {
+                "title": "Angular.js",
+                "value": 3
+            },
+            {
+                "title": "ASP.NET",
+                "value": 3
+            },
+            {
+                "title": "Java",
+                "value": 3
+            },
+            {
+                "title": "Python",
+                "value": 3
+            },
+            {
+                "title": "PHP",
+                "value": 3
+            }
+        ]
+    }
+}

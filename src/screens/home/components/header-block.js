@@ -2,7 +2,7 @@ import React from 'react';
 import { Col, Row } from 'react-bootstrap';
 
 export const HeaderBlock = (props) => {
-    const { title, subtitle } = props;
+    const { title, subtitle, rightComponent = <></> } = props;
     return (
         <Row style={{ marginTop: 20, marginBottom: 20 }}>
             <Col md={{ span: 4, offset: 2 }}>
@@ -10,6 +10,9 @@ export const HeaderBlock = (props) => {
                     <h3 style={styles.text}>{title}</h3>
                     <p style={styles.text}>{subtitle}</p>
                 </div>
+            </Col>
+            <Col md={{ span: 4, offset: 2 }}>
+                {rightComponent}
             </Col>
         </Row>
     )

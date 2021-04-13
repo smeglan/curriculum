@@ -1,4 +1,4 @@
-import { Button, Col, Row } from 'react-bootstrap';
+import { Button, Col, Dropdown, Row } from 'react-bootstrap';
 import { PureComponent } from 'react';
 import { Block } from './components/block';
 import { ItemBlock } from './components/item-block';
@@ -8,8 +8,37 @@ import { HeaderBlock } from './components/header-block';
 import { Competence } from './components/competence';
 //import html2canvas from 'html2canvas';
 import jsPDF from 'jspdf';
+import { References } from './components/references/references';
+import { faGlobe } from '@fortawesome/free-solid-svg-icons';
 //import { faFileDownload } from '@fortawesome/free-solid-svg-icons';
 export class Home extends PureComponent {
+
+    constructor() {
+        super();
+        this.state = {
+            data: {},
+            language: {
+                label: "English",
+                value: 'eng'
+            },
+            languageList: [{
+                label: "Español",
+                value: 'esp'
+            },
+            {
+                label: "English",
+                value: 'eng'
+            }]
+        }
+    }
+    componentDidMount() {
+        try {
+            const languageFile = require('../../information/' + this.state.language.value + '.json');
+            this.setState({ data: languageFile })
+        } catch (error) {
+            alert(String(error))
+        }
+    }
 
     printDocument = () => {
         const source = document.getElementById('divToPrint');
@@ -24,229 +53,162 @@ export class Home extends PureComponent {
             doc.save("Hoja de vida - Sebastián Noreña Meglan")
         }).catch(e => console.log(e));
     }
+    changeLanguage = (language) => {
+        const languageFile = require('../../information/' + language.value + '.json');
+        this.setState({ data: languageFile, language })
+    }
 
     render() {
         return (
             <>
-                <Row id="divToPrint" className="justify-content-md-center">
+                {this.state.data && <Row id="divToPrint" className="justify-content-md-center">
                     <Col md={12}>
-                        <HeaderBlock title="SEBASTIÁN NOREÑA MEGLAN" subtitle="DESARROLLADOR DE SOFTWARE"></HeaderBlock>
+                        <HeaderBlock
+                            title={this.state.data.name}
+                            subtitle={this.state.data.position}
+                            rightComponent={
+                                <Dropdown>
+                                    <Dropdown.Toggle variant="dark" id="dropdown-basic">
+                                        <FontAwesomeIcon icon={faGlobe} /> {this.state.language.label}
+                                    </Dropdown.Toggle>
+                                    <Dropdown.Menu>
+                                        {this.state.languageList.map((lang, i) => {
+                                            return (
+                                                <Dropdown.Item key={"lang" + i} onClick={() => this.changeLanguage(lang)}>{lang.label}</Dropdown.Item>
+                                            )
+                                        })}
+                                    </Dropdown.Menu>
+                                </Dropdown>
+                            }
+                        ></HeaderBlock>
+
                     </Col>
                     <Col md={2}>
-                        <Block title='INFORMACIÓN'>
-                            <ItemBlock
-                                title="TELÉFONO"
-                                info="3104395956"
-                            />
-                            <ItemBlock
-                                title="EMAIL"
-                                info="sebastiannmeglan@gmail.com"
-                            />
-                        </Block>
-                        <Block title='ENLACES'>
+                        {this.state.data.information &&
+                            <Block title={this.state.data.information.title}>
+                                {this.state.data.information.values.map((info, i) => {
+                                    return (
+                                        <ItemBlock
+                                            key={"information" + i}
+                                            title={info.title}
+                                            info={info.value}
+                                        />
+                                    )
+                                })}
+                            </Block>
+                        }
+                        {this.state.data.links && <Block title={this.state.data.links.title}>
                             <ItemBlock>
-                                <Button href="https://github.com/smeglan" style={{ marginRight: 10 }} variant="outline-dark">
+                                <Button href={this.state.data.links.values.github} style={{ marginRight: 10 }} variant="outline-dark">
                                     <FontAwesomeIcon icon={faGithub} />
                                 </Button>
-                                <Button href="https://www.linkedin.com/in/sebastian-noreña-meglan-50534b199/" variant="outline-dark">
+                                <Button href={this.state.data.links.values.linkedIn} variant="outline-dark">
                                     <FontAwesomeIcon icon={faLinkedinIn} />
                                 </Button>
                             </ItemBlock>
                         </Block>
-                        <Block title='IDIOMAS'>
-                            {Languajes.map((item, i) => {
-                                return (
-                                    <ItemBlock title={item.title}>
-                                        <Competence points={item.value}></Competence>
-                                    </ItemBlock>
-                                )
-                            })}
-
-                        </Block>
-                        <Block title='HOBBIES'>
+                        }
+                        {this.state.data.languages &&
+                            <Block title={this.state.data.languages.title}>
+                                {this.state.data.languages.values.map((item, i) => {
+                                    return (
+                                        <ItemBlock key={"langauge" + i} title={item.title}>
+                                            <Competence points={item.value}></Competence>
+                                        </ItemBlock>
+                                    )
+                                })}
+                            </Block>
+                        }
+                        {this.state.data.hobbies && <Block title={this.state.data.hobbies.title}>
                             <ItemBlock>
-                                <label>Modelado 3D</label>
-                                <br></br>
-                                <label>Videojuegos</label>
-                                <br></br>
+                                {this.state.data.hobbies.values.map((hobby, i) => {
+                                    return (
+                                        <div key={"hobby" + i}>
+                                            <label>
+                                                {hobby}
+                                            </label>
+                                        </div>
+                                    )
+                                })}
                             </ItemBlock>
-                        </Block>
+                        </Block>}
                     </Col>
                     <Col md={6} >
-                        <Block title="PERFIL">
+                        {this.state.data.profile && <Block title={this.state.data.profile.title}>
                             <ItemBlock>
                                 <p>
-                                    Tecnico en desarrollo de software y estudiante de ultimo semestre de ingenieria de sistemas y computación, con mas de un año de experiencia en desarrollo e integración de aplicaciones web y móvil, bajo frameworks basados en node.js.
-                                    Responsable, autodidacta, honesto y eficaz en tareas de desarrollo.
+                                    {this.state.data.profile.value}
                                 </p>
                             </ItemBlock>
-                        </Block>
-                        <Block title="EDUCACIÓN">
-                            <ItemBlock
-                                title="Ingenieria de sistemas y computación"
-                                institution="Universidad de Caldas"
-                                location="Manizales"
-                                info="2013 - presente"
-                            />
-                            <ItemBlock
-                                title="Técnico en programación de software"
-                                institution="SENA"
-                                location="Manizales"
-                                info="2010 - 2012"
-                            />
-                        </Block>
-                        <Block title="EXPERIENCIA LABORAL">
-                            <ItemBlock
-                                title="Ingeniero desarrollador de software"
-                                institution="Reactiva soporte y desarrollo"
-                                location="Manizales"
-                                info="Enero 2020 - presente"
-                                description="Desarrollo, mantenimiento, soporte e integración de aplicativos web y móvil basados en React.js, diseño de sistemas con pasarelas de pago y capacitación de personal."
-                            />
-                            <ItemBlock
-                                title="Desarrollador de software"
-                                institution="Desarrollo Eficaz"
-                                location="Medellin"
-                                info="Julio 2020 - Septiembre 2020"
-                                description="Desarrollo e integración de pagina web(frontend y backend) con integración con payU para tatuadores de manera remota."
-                            />
-                            <ItemBlock
-                                title="Practicante desarrollador de software"
-                                institution="Reactiva soporte y desarrollo"
-                                location="Manizales"
-                                info="Agosto 2019 - Enero 2020"
-                                description="Desarrollo, matenimiento e integración de aplicativos moviles basados en Appceletor, labores tecnicas de mantenimiento."
-                            />
-                        </Block>
-                        <Block title="CERTIFICACIONES">
-                            <ItemBlock
-                                title="Expert PRO PRINCIPIOS DE C#"
-                                institution="UA expert"
-                                location="Virtual"
-                                info="Febrero 2021"
-                            />
-                            <ItemBlock
-                                title="Google Cloud Platform Fundamentals: Core Infrastructure"
-                                institution="Coursera"
-                                location="Virtual"
-                                info="Febrero 2021"
-                            />
-                            <ItemBlock
-                                title="Automatización en procesos industriales"
-                                institution="SENA"
-                                location="Manizales"
-                                info="2017"
-                            />
-                        </Block>
-                        <Block title="REFERENCIAS">
-                            <Row>
-                                <Col>
-                                    <h4>Laborales</h4>
+                        </Block>}
+                        {this.state.data.education &&
+                            <Block title={this.state.data.education.title}>
+                                {this.state.data.education.values.map((grade, i) => {
+                                    return (
+                                        <ItemBlock
+                                            key={"education" + i}
+                                            title={grade.title}
+                                            institution={grade.institution}
+                                            location={grade.location}
+                                            info={grade.date}
+                                        />
+                                    )
+                                })}
+                            </Block>
+                        }
+                        {this.state.data.experience && <Block title={this.state.data.experience.title}>
+                            {this.state.data.experience.values.map((experience, i) => {
+                                return (
                                     <ItemBlock
-                                        title="Francizco Aristizabal"
-                                        info="3013066169"
+                                        key={"experience" + i}
+                                        title={experience.title}
+                                        institution={experience.institution}
+                                        location={experience.location}
+                                        info={experience.date}
+                                        description={experience.description}
                                     />
-                                    <ItemBlock
-                                        title="Darwin Salazar Ramirez"
-                                        info="3137752895"
-                                    />
-                                    <ItemBlock
-                                        title="Cristian Camilo Gutierrez"
-                                        info="3104629798"
-                                    />
-                                </Col>
-                                <Col>
-                                    <h4>Personales</h4>
-                                    <ItemBlock
-                                        title="Mateo Isaac Padierna"
-                                        info="3194066373"
-                                    />
-                                    <ItemBlock
-                                        title="Juan Manuel Zuluaga"
-                                        info="3187587898"
-                                    />
-                                </Col>
-                            </Row>
-                        </Block>
+                                )
+                            })}
+                        </Block>}
+                        {this.state.data.certifications &&
+                            <Block title={this.state.data.certifications.title}>
+                                {this.state.data.certifications.values.map((certification, i) => {
+                                    return (
+                                        <ItemBlock
+                                            key={"certification" + i}
+                                            title={certification.title}
+                                            institution={certification.institution}
+                                            location={certification.location}
+                                            info={certification.date}
+                                        />
+                                    )
+                                })
+                                }
+                            </Block>
+                        }
+                        {this.state.data.references &&
+                            <References
+                                title={this.state.data.references.title}
+                                leftSubtitle={this.state.data.references.values.labor.title}
+                                rightTitle={this.state.data.references.values.personal.title}
+                                personal={this.state.data.references.values.personal.values}
+                                labor={this.state.data.references.values.labor.values}
+                            />
+                        }
                     </Col>
                     <Col md={2}>
-                        <Block title='COMPETENCIAS'>
-                            {Competences.map((item, i) => {
+                        {this.state.data.competences && <Block title={this.state.data.competences.title}>
+                            {this.state.data.competences.values.map((item, i) => {
                                 return (
-                                    <ItemBlock title={item.title}>
+                                    <ItemBlock key={"competence" + i} title={item.title}>
                                         <Competence points={item.value}></Competence>
                                     </ItemBlock>
                                 )
                             })}
-                        </Block>
+                        </Block>}
                     </Col>
-                </Row>
-                {/*<Button onClick={this.printDocument} style={{ marginLeft: 20 }} variant="outline-dark">
-                    <FontAwesomeIcon icon={faFileDownload} /> PDF (Experimental)
-                </Button>*/}
+                </Row>}
             </>
         )
     }
 }
-
-const Competences = [
-    {
-        title: "Javascript",
-        value: 5
-    },
-    {
-        title: "React.js",
-        value: 5
-    },
-    {
-        title: "React Native",
-        value: 5
-    },
-    {
-        title: "C#",
-        value: 4
-    },
-    {
-        title: "Express.js",
-        value: 3
-    },
-    {
-        title: "MongoDB",
-        value: 3
-    },
-    {
-        title: "Angular.js",
-        value: 3
-    },
-    {
-        title: "ASP.NET",
-        value: 3
-    },
-    {
-        title: "Java",
-        value: 3
-    },
-    {
-        title: "Python",
-        value: 3
-    },
-    {
-        title: "PHP",
-        value: 3
-    }
-]
-
-const Languajes = [
-    {
-        title: "Español",
-        value: 5
-    },
-    {
-        title: "Ingles",
-        value: 3
-    },
-    {
-        title: "Japónes",
-        value: 2
-    }
-]
