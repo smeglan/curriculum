@@ -61,29 +61,13 @@ export class Home extends PureComponent {
     render() {
         return (
             <>
-                {this.state.data && <Row id="divToPrint" className="justify-content-md-center">
-                    <Col md={12} lg={12}>
+                {this.state.data && <Row id="divToPrint">
+                    <Col md={12} lg={5} style={{ backgroundColor: "#404B6B" }}>
                         <HeaderBlock
                             title={this.state.data.name}
                             subtitle={this.state.data.position}
-                            rightComponent={
-                                <Dropdown>
-                                    <Dropdown.Toggle variant="dark" id="dropdown-basic">
-                                        <FontAwesomeIcon icon={faGlobe} /> {this.state.language.label}
-                                    </Dropdown.Toggle>
-                                    <Dropdown.Menu>
-                                        {this.state.languageList.map((lang, i) => {
-                                            return (
-                                                <Dropdown.Item key={"lang" + i} onClick={() => this.changeLanguage(lang)}>{lang.label}</Dropdown.Item>
-                                            )
-                                        })}
-                                    </Dropdown.Menu>
-                                </Dropdown>
-                            }
-                        ></HeaderBlock>
-
-                    </Col>
-                    <Col md={12} lg={2}>
+                            variant="light"
+                        />
                         {this.state.data.information &&
                             <Block title={this.state.data.information.title}>
                                 {this.state.data.information.values.map((info, i) => {
@@ -92,6 +76,7 @@ export class Home extends PureComponent {
                                             key={"information" + i}
                                             title={info.title}
                                             info={info.value}
+                                            variant="light"
                                         />
                                     )
                                 })}
@@ -99,10 +84,10 @@ export class Home extends PureComponent {
                         }
                         {this.state.data.links && <Block title={this.state.data.links.title}>
                             <ItemBlock>
-                                <Button href={this.state.data.links.values.github} style={{ marginRight: 10 }} variant="outline-dark">
+                                <Button href={this.state.data.links.values.github} style={{ marginRight: 10 }} variant="light">
                                     <FontAwesomeIcon icon={faGithub} />
                                 </Button>
-                                <Button href={this.state.data.links.values.linkedIn} variant="outline-dark">
+                                <Button href={this.state.data.links.values.linkedIn} variant="light">
                                     <FontAwesomeIcon icon={faLinkedinIn} />
                                 </Button>
                             </ItemBlock>
@@ -112,8 +97,8 @@ export class Home extends PureComponent {
                             <Block title={this.state.data.languages.title}>
                                 {this.state.data.languages.values.map((item, i) => {
                                     return (
-                                        <ItemBlock key={"langauge" + i} title={item.title}>
-                                            <Competence points={item.value}></Competence>
+                                        <ItemBlock key={"langauge" + i} title={item.title} variant="light">
+                                            <Competence points={item.value} variant="light"></Competence>
                                         </ItemBlock>
                                     )
                                 })}
@@ -124,7 +109,7 @@ export class Home extends PureComponent {
                                 {this.state.data.hobbies.values.map((hobby, i) => {
                                     return (
                                         <div key={"hobby" + i}>
-                                            <label>
+                                            <label style={{ color: "#E8E8E8" }}>
                                                 {hobby}
                                             </label>
                                         </div>
@@ -133,7 +118,21 @@ export class Home extends PureComponent {
                             </ItemBlock>
                         </Block>}
                     </Col>
-                    <Col md={12} lg={6}>
+                    <Col md={12} lg={7}>
+                        <Col md={{ span: 2, offset: 10 }}>
+                            <Dropdown style={{ margin: 10 }}>
+                                <Dropdown.Toggle variant="dark" id="dropdown-basic">
+                                    <FontAwesomeIcon icon={faGlobe} /> {this.state.language.label}
+                                </Dropdown.Toggle>
+                                <Dropdown.Menu>
+                                    {this.state.languageList.map((lang, i) => {
+                                        return (
+                                            <Dropdown.Item key={"lang" + i} onClick={() => this.changeLanguage(lang)}>{lang.label}</Dropdown.Item>
+                                        )
+                                    })}
+                                </Dropdown.Menu>
+                            </Dropdown>
+                        </Col>
                         {this.state.data.profile && <Block title={this.state.data.profile.title}>
                             <ItemBlock>
                                 <p>
@@ -170,6 +169,15 @@ export class Home extends PureComponent {
                                 )
                             })}
                         </Block>}
+                        {this.state.data.competences && <Block title={this.state.data.competences.title}>
+                            {this.state.data.competences.values.map((item, i) => {
+                                return (
+                                    <ItemBlock key={"competence" + i} title={item.title}>
+                                        <Competence points={item.value}></Competence>
+                                    </ItemBlock>
+                                )
+                            })}
+                        </Block>}
                         {this.state.data.certifications &&
                             <Block title={this.state.data.certifications.title}>
                                 {this.state.data.certifications.values.map((certification, i) => {
@@ -180,6 +188,8 @@ export class Home extends PureComponent {
                                             institution={certification.institution}
                                             location={certification.location}
                                             info={certification.date}
+                                            link={certification.link}
+                                            doc={certification.doc}
                                         />
                                     )
                                 })
@@ -195,17 +205,6 @@ export class Home extends PureComponent {
                                 labor={this.state.data.references.values.labor.values}
                             />
                         }
-                    </Col>
-                    <Col md={12} lg={2}>
-                        {this.state.data.competences && <Block title={this.state.data.competences.title}>
-                            {this.state.data.competences.values.map((item, i) => {
-                                return (
-                                    <ItemBlock key={"competence" + i} title={item.title}>
-                                        <Competence points={item.value}></Competence>
-                                    </ItemBlock>
-                                )
-                            })}
-                        </Block>}
                     </Col>
                 </Row>}
             </>

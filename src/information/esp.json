@@ -92,19 +92,25 @@
                 "title": "Expert PRO PRINCIPIOS DE C#",
                 "institution": "UA expert",
                 "location": "Virtual",
-                "date": "Febrero 2021"
+                "date": "Febrero 2021",
+                "link": "Expert PRO PRINCIPIOS DE C#.pdf",
+                "doc": true
             },
             {
                 "title": "Google Cloud Platform Fundamentals: Core Infrastructure",
                 "institution": "Coursera",
                 "location": "Virtual",
-                "date": "Febrero 2021"
+                "date": "Febrero 2021",
+                "link": "https://coursera.org/share/4594786dddaabfe015d7acce6ebac475",
+                "doc": false
             },
             {
                 "title": "Automatización en procesos industriales",
                 "institution": "SENA",
                 "location": "Manizales",
-                "date": "2017"
+                "date": "2017",
+                "link": "Automatización procesos indrustriales.pdf",
+                "doc": true
             }
         ]
     },

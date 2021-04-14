@@ -19,7 +19,7 @@
         ]
     },
     "links": {
-        "title": "LINKS",
+        "title": "SOCIAL",
         "values": {
             "linkedIn": "https://www.linkedin.com/in/sebastian-noreña-meglan-50534b199/",
             "github": "https://github.com/smeglan"
@@ -96,19 +96,25 @@
                 "title": "Expert PRO PRINCIPIOS DE C#",
                 "institution": "UA expert",
                 "location": "Virtual",
-                "date": "Feb 2021"
+                "date": "Feb 2021",
+                "link": "Expert PRO PRINCIPIOS DE C#.pdf",
+                "doc": true
             },
             {
                 "title": "Google Cloud Platform Fundamentals: Core Infrastructure",
                 "institution": "Coursera",
                 "location": "Virtual",
-                "date": "Feb 2021"
+                "date": "Feb 2021",
+                "link": "https://coursera.org/share/4594786dddaabfe015d7acce6ebac475",
+                "doc": false
             },
             {
                 "title": "Automation in industrial processes",
                 "institution": "SENA",
                 "location": "Manizales",
-                "date": "2017"
+                "date": "2017",
+                "link": "Automatización procesos indrustriales.pdf",
+                "doc": true
             }
         ]
     },

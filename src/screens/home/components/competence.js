@@ -1,33 +1,44 @@
 import { faCircle as faCircleAlt } from '@fortawesome/free-regular-svg-icons';
 import { faCircle as faCircleSolid } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 
 export const Competence = (props) =>{
-    const { title, points = 1 } = props;
-    const [records, setRecord] = useState([]);
-    const drawPoints = () =>{
-        const _records = [];
-        for (let i = 0; i < 5; i++) {
-            if(i<points){
-                _records.push(<FontAwesomeIcon key={"key"+i} style={styles.dot} icon={faCircleSolid} />)
-            }else{
-                _records.push(<FontAwesomeIcon key={"key"+i} style={styles.dot} icon={faCircleAlt} />)
-            }
-        }
-        setRecord(_records);
-    }
-    useEffect(() => {
-        drawPoints();
-    }, [title])
+    const { title, points = 1, variant="" } = props;
+    const style = variant === "light" ? styleLight : styleDark
+    const iterations = new Array(5).fill(0);
     return (
         <div>
-            <label>{title}</label>
-            {records.map((value,i) =>{
-                return value
+            <label style={style.text}>{title}</label>
+            {iterations.map((value, i)=>{
+                if(i<points){
+                    return <FontAwesomeIcon key={"key"+i} style={styles.dot} color={style.dotColor} icon={faCircleSolid} />
+                }else{
+                    return <FontAwesomeIcon key={"key"+i} style={styles.dot} color={style.dotColor} icon={faCircleAlt} />
+                }
             })}
         </div>
     )
+}
+
+const styleDark = {
+    button: {
+        variant: "outline-dark"
+    },
+    text: {
+        color: "black"
+    },
+    dotColor: "black"
+}
+
+const styleLight = {
+    button: {
+        variant: "outline-light"
+    },
+    text: {
+        color: "#E8E8E8"
+    },
+    dotColor: "#E8E8E8"
 }
 
 const styles = {
