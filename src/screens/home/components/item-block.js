@@ -4,14 +4,10 @@ import React from 'react';
 import { Button, Col, Row } from 'react-bootstrap';
 
 export const ItemBlock = (props) => {
-    const { title, info, location, institution, description, link, doc = false, variant = "" } = props;
+    const { title, info, location, institution, description, link, variant = "" } = props;
     const style = variant === "light" ? styleLight : styleDark
     const showLink = () => {
-        if (doc) {
-
-        } else {
-
-        }
+        window.open(link, '_blank');
     }
     if (props.children) {
         if (title) {

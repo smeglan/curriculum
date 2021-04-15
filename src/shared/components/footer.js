@@ -6,7 +6,7 @@ export const Footer = () => {
             <p style={{textAlign:'center'}}>
                 <a href="https://github.com/smeglan/curriculum">See on github.</a>
                 <br></br>
-                Last update 13/04/2021.
+                Last update 15/04/2021.
             </p>
         </div>
     )

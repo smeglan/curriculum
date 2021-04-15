@@ -30,16 +30,26 @@
         "values": [
             {
                 "title": "Spanish",
-                "value": 5
+                "value": "Native"
             },
             {
                 "title": "English",
-                "value": 3
+                "value": "Intermediate"
             },
             {
                 "title": "Japanese",
-                "value": 2
+                "value": "Basic"
             }
+        ]
+    },
+    "skills": {
+        "title": "SKILLS",
+        "values": [
+            "Adaptable",
+            "Self-management",
+            "Leadership",
+            "Integrity",
+            "Work ethic"
         ]
     },
     "hobbies": {
@@ -97,24 +107,21 @@
                 "institution": "UA expert",
                 "location": "Virtual",
                 "date": "Feb 2021",
-                "link": "Expert PRO PRINCIPIOS DE C#.pdf",
-                "doc": true
+                "link": "https://drive.google.com/file/d/16fYkBNX5MT6ASlRJAOdXU_t6zp1DRAN-/view?usp=sharing"
             },
             {
                 "title": "Google Cloud Platform Fundamentals: Core Infrastructure",
                 "institution": "Coursera",
                 "location": "Virtual",
                 "date": "Feb 2021",
-                "link": "https://coursera.org/share/4594786dddaabfe015d7acce6ebac475",
-                "doc": false
+                "link": "https://coursera.org/share/4594786dddaabfe015d7acce6ebac475"
             },
             {
                 "title": "Automation in industrial processes",
                 "institution": "SENA",
                 "location": "Manizales",
                 "date": "2017",
-                "link": "Automatización procesos indrustriales.pdf",
-                "doc": true
+                "link": "https://drive.google.com/file/d/11a3S_opgITSano29lfRuY94ge0DYRWxY/view?usp=sharing"
             }
         ]
     },
