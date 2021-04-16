@@ -1,4 +1,6 @@
 {
+    "language": "esp",
+    "curriculum": "https://curriculumfinal.vercel.app/esp",
     "name": "SEBASTIÁN NOREÑA MEGLAN",
     "position": "DESARROLLADOR DE SOFTWARE",
     "information": {
@@ -15,7 +17,7 @@
         ]
     },
     "links": {
-        "title": "ENLACES",
+        "title": "SOCIAL",
         "values": {
             "linkedIn": "https://www.linkedin.com/in/sebastian-noreña-meglan-50534b199/",
             "github": "https://github.com/smeglan"

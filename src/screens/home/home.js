@@ -6,11 +6,9 @@ import { faGithub, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { HeaderBlock } from './components/header-block';
 import { Competence } from './components/competence';
-//import html2canvas from 'html2canvas';
-import jsPDF from 'jspdf';
 import { References } from './components/references';
 import { faGlobe } from '@fortawesome/free-solid-svg-icons';
-
+import { GeneratePDF } from '../../shared/components/pdf-generator';
 //import { faFileDownload } from '@fortawesome/free-solid-svg-icons';
 export class Home extends PureComponent {
 
@@ -42,19 +40,10 @@ export class Home extends PureComponent {
         }
     }
 
-    printDocument = () => {
-        const source = document.getElementById('divToPrint');
-        var doc = new jsPDF({
-            unit: 'mm',
-            format: 'a4',
-            putOnlyUsedFonts: true,
-            floatPrecision: 16 // or "smart", default is 16
-        });
-        //var source = window.document.getElementsByTagName("body")[0];
-        doc.html(source).then(pdf => {
-            doc.save("Hoja de vida - Sebastián Noreña Meglan")
-        }).catch(e => console.log(e));
+    downloadPDF = () => {
+        GeneratePDF(this.state.data);
     }
+
     changeLanguage = (language) => {
         const languageFile = require('../../information/' + language + '.json');
         this.setState({ data: languageFile, language })
@@ -62,18 +51,18 @@ export class Home extends PureComponent {
 
     render() {
         return (
-            <>
-                {this.state.data && <Row id="divToPrint">
+            <div id="jsx-template">
+                {this.state.data && <Row>
                     <Col lg={12} style={{ paddingBottom: 20, borderBottomStyle: 'solid', borderBottomWidth: 2, borderBottomColor: "#404B6B" }} >
                         <Row style={{ backgroundColor: "#404B6B" }}>
-                            <Col md={{ span: 6, offset: 1 }} lg={{ span: 4, offset: 2 }}>
+                            <Col md={{ span: 6, offset: 1 }} lg={{ span: 6, offset: 2 }}>
                                 <HeaderBlock
                                     title={this.state.data.name}
                                     subtitle={this.state.data.position}
                                     variant="light"
                                 />
                             </Col>
-                            <Col md={{ span: 3, offset: 2 }} lg={{ span: 2, offset: 4 }} style={{ alignSelf: 'center' }}>
+                            <Col md={{ span: 3, offset: 2 }} lg={{ span: 2, offset: 2 }} style={{ alignSelf: 'center' }}>
                                 <Dropdown style={{ margin: 10 }}>
                                     <Dropdown.Toggle variant="dark" id="dropdown-basic">
                                         <FontAwesomeIcon icon={faGlobe} /> {this.state.languageList[this.state.language].label}
@@ -86,6 +75,7 @@ export class Home extends PureComponent {
                                         })}
                                     </Dropdown.Menu>
                                 </Dropdown>
+                                <Button style={{margin:10}} variant="dark" onClick={this.downloadPDF}>PDF(En contrucción)</Button>
                             </Col>
                         </Row>
                     </Col>
@@ -238,7 +228,7 @@ export class Home extends PureComponent {
 
                     </Row>
                 </Row>}
-            </>
+            </div>
         )
     }
 }
