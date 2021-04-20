@@ -50,6 +50,7 @@ const valuesToJson = (values, type = "list") => {
                                 width: '60%',
                                 stack: [
                                     { text: element.title, style: 'subtitle' },
+                                    { text: element.description, style: 'text' },
                                     { text: element.date, style: 'text' }
                                 ]
                             },
@@ -106,68 +107,69 @@ export const GeneratePDF = (data) => {
             { text: data.position, style: 'role' },
             " ",
             {
-                columns: [
-                    {
-                        width: '30%',
-                        stack: [
-                            { text: data.information.title, style: 'title' },
-                            " ",
-                            [...valuesToJson(data.information.values, "data")],
-                            " ",
-                            { text: data.links.title, style: 'title' },
-                            " ",
-                            { text: "LinkedIn", style: 'subtitle' },
-                            { text: data.links.values.linkedIn, style: 'link' },
-                            { text: "Github", style: 'subtitle' },
-                            { text: data.links.values.github, style: 'link' },
-                            " ",
-                            { text: data.languages.title, style: 'title' },
-                            " ",
-                            [...valuesToJson(data.languages.values, "data")],
-                            " ",
-                            { text: data.skills.title, style: 'title' },
-                            " ",
-                            {
-                                style: 'text',
-                                ul: [...valuesToJson(data.skills.values)]
-                            },
-                            " ",
-                            { text: data.hobbies.title, style: 'title' },
-                            " ",
-                            [...valuesToJson(data.hobbies.values)],
-                            " ",
-                        ],
-                    },
-                    {
-                        width: '70%',
-                        stack: [
-                            { text: data.profile.title, style: 'title' },
-                            " ",
-                            { text: data.profile.value, style: 'text' },
-                            " ",
-                            { text: data.education.title, style: 'title' },
-                            " ",
-                            [...valuesToJson(data.education.values, "education")],
-                            " ",
-                            " ",
-                            [...valuesToJson(data.education.values, "education")],
-                            " ",
-                            { text: data.experience.title, style: 'title' },
-                            " ",
-                            [...valuesToJson(data.experience.values, "experience")],
-                            " ",
-                            { text: data.certifications.title, style: 'title' },
-                            " ",
-                            [...valuesToJson(data.certifications.values, "education")],
-                            " ",
-                            { text: data.competences.title, style: 'title' },
-                            " ",
-                            [...valuesToJson(data.competences.values, "competence")],
-                            " ",
-                        ],
+                layout: 'noBorders',
+                table: {
+                    widths: ['30%', '70%'],
+                    body: [[
+                        {
+                            style: 'section',
+                            fillColor: '#404B6B',
+                            color: '#E8E8E8',
+                            stack: [
+                                { text: data.information.title, style: 'title' },
+                                " ",
+                                [...valuesToJson(data.information.values, "data")],
+                                " ",
+                                { text: data.links.title, style: 'title' },
+                                " ",
+                                { text: "LinkedIn", style: 'link', link: data.links.values.linkedIn },
+                                { text: "Github", style: 'link', link: data.links.values.github },
+                                " ",
+                                { text: data.languages.title, style: 'title' },
+                                " ",
+                                [...valuesToJson(data.languages.values, "data")],
+                                " ",
+                                { text: data.skills.title, style: 'title' },
+                                " ",
+                                {
+                                    style: 'text',
+                                    ul: [...valuesToJson(data.skills.values)]
+                                },
+                                " ",
+                                { text: data.hobbies.title, style: 'title' },
+                                " ",
+                                [...valuesToJson(data.hobbies.values)],
+                                " ",
+                            ]
+                        },
+                        {
+                            style: 'section',
+                            stack: [
+                                { text: data.profile.title, style: 'title' },
+                                " ",
+                                { text: data.profile.value, style: 'text' },
+                                " ",
+                                { text: data.education.title, style: 'title' },
+                                " ",
+                                [...valuesToJson(data.education.values, "education")],
+                                " ",
+                                { text: data.experience.title, style: 'title' },
+                                " ",
+                                [...valuesToJson(data.experience.values, "experience")],
+                                " ",
+                                { text: data.certifications.title, style: 'title' },
+                                " ",
+                                [...valuesToJson(data.certifications.values, "education")],
+                                " ",
+                                { text: data.competences.title, style: 'title' },
+                                " ",
+                                [...valuesToJson(data.competences.values, "competence")],
+                                " ",
+                            ],
 
-                    }
-                ]
+                        }
+                    ]]
+                }
             }
         ],
         styles: {
@@ -180,12 +182,15 @@ export const GeneratePDF = (data) => {
                 fontSize: 16
             },
             title: {
-                fontSize: 14,
+                fontSize: 12,
                 bold: true,
                 decoration: 'underline'
             },
+            section: {
+                margin: 10
+            },
             subtitle: {
-                fontSize: 12,
+                fontSize: 11,
                 bold: true
             },
             text: {
@@ -193,7 +198,7 @@ export const GeneratePDF = (data) => {
             },
             link: {
                 decoration: 'underline',
-                color: '#0000ee',
+                color: '#c3c3c3',
                 fontSize: 10,
             }
         }
