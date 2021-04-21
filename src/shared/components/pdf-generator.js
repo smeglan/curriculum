@@ -13,7 +13,11 @@ const valuesToJson = (values, type = "list") => {
             break;
         case "data":
             values.forEach(element => {
-                stack.push(...[{ text: element.title, style: 'subtitle' }, { text: element.value, style: 'text' }]);
+                stack.push(...[
+                    { text: element.title, style: 'subtitle' },
+                    { text: element.value, style: 'text' }, ,
+                    " "
+                ]);
             });
             break;
         case "education":
@@ -22,15 +26,21 @@ const valuesToJson = (values, type = "list") => {
                     {
                         columns: [
                             {
-                                width: '60%',
+                                width: '58%',
                                 stack: [
                                     { text: element.title, style: 'subtitle' },
-                                    { text: element.date, style: 'text' }
+                                    { text: element.date, style: 'text' },
+                                    " "
+
+                                ]
+                            }, {
+                                width: '4%',
+                                stack: [
 
                                 ]
                             },
                             {
-                                width: '40%',
+                                width: '38%',
                                 stack: [
                                     { text: element.institution, style: 'subtitle' },
                                     { text: element.location, style: 'text' }
@@ -47,18 +57,25 @@ const valuesToJson = (values, type = "list") => {
                     {
                         columns: [
                             {
-                                width: '60%',
+                                width: '58%',
                                 stack: [
                                     { text: element.title, style: 'subtitle' },
                                     { text: element.description, style: 'text' },
-                                    { text: element.date, style: 'text' }
+                                    " ",
+                                    " "
+                                ]
+                            }, {
+                                width: '4%',
+                                stack: [
+
                                 ]
                             },
                             {
-                                width: '40%',
+                                width: '38%',
                                 stack: [
                                     { text: element.institution, style: 'subtitle' },
-                                    { text: element.location, style: 'text' }
+                                    { text: element.location, style: 'text' },
+                                    { text: element.date, style: 'text' }
                                 ]
                             }
                         ]
