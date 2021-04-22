@@ -3,6 +3,33 @@ import pdfFonts from "pdfmake/build/vfs_fonts";
 
 pdfMake.vfs = pdfFonts.pdfMake.vfs;
 
+const generateStars = (number) => {
+    const result = []
+    const fit = 7
+    for (let i = 0; i < 5; i++) {
+        const flag = number - i;
+        if (flag >= 0) {
+            result.push({
+                image: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABmJLR0QA/wD/AP+gvaeTAAABMUlEQVRIibXVMS8EQQDF8d857hyVUOpIaKg0OsRXUNBRED6Gb6DTaCQKhUIUVyslGpVIDhGXU+pUl1DcXrK39s7O2nvJSzbZee8/O9mZIUyTkTNrJBBwgP3ATGZV0cQHasMAHOE78mHR5WN4jQHeUCkSsBcr73q3qPIynlIADYwWAdhJKe96+69wKfY8gXnMJbyCqT75T9zjOeEGvrqDjtEaMMu8bkXdqrgeAqAutl8quCqw/AbjyfUs47yA8kudfZOqMs7+UX4hw69bwkmO8lMBh2cV7YDydpT5pX7ERZ3lyqoyFkIAywHlAzP9AEs5AKmZUEA9cpqCvjp5dNxhPfZ+FbeJMc2s5TOx0CO29B6KcW3iITZ+OgtgA+86l3uW834kmsQL1rIAZuW71GtRtkc/Mhyx7Tzug0kAAAAASUVORK5CYII=",
+                fit: [fit, fit]
+            });
+        } else {
+            if (flag > -1) {
+                result.push({
+                    image: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABmJLR0QA/wD/AP+gvaeTAAABMUlEQVRIibXVMS8EQQDF8d857hyVUOpIaKg0OsRXUNBRED6Gb6DTaCQKhUIUVyslGpVIDhGXU+pUl1DcXrK39s7O2nvJSzbZee8/O9mZIUyTkTNrJBBwgP3ATGZV0cQHasMAHOE78mHR5WN4jQHeUCkSsBcr73q3qPIynlIADYwWAdhJKe96+69wKfY8gXnMJbyCqT75T9zjOeEGvrqDjtEaMMu8bkXdqrgeAqAutl8quCqw/AbjyfUs47yA8kudfZOqMs7+UX4hw69bwkmO8lMBh2cV7YDydpT5pX7ERZ3lyqoyFkIAywHlAzP9AEs5AKmZUEA9cpqCvjp5dNxhPfZ+FbeJMc2s5TOx0CO29B6KcW3iITZ+OgtgA+86l3uW834kmsQL1rIAZuW71GtRtkc/Mhyx7Tzug0kAAAAASUVORK5CYII=",
+                    fit: [fit, fit]
+                });
+            } else {
+                result.push({
+                    image: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABmJLR0QA/wD/AP+gvaeTAAABMUlEQVRIibXVMS8EQQDF8d857hyVUOpIaKg0OsRXUNBRED6Gb6DTaCQKhUIUVyslGpVIDhGXU+pUl1DcXrK39s7O2nvJSzbZee8/O9mZIUyTkTNrJBBwgP3ATGZV0cQHasMAHOE78mHR5WN4jQHeUCkSsBcr73q3qPIynlIADYwWAdhJKe96+69wKfY8gXnMJbyCqT75T9zjOeEGvrqDjtEaMMu8bkXdqrgeAqAutl8quCqw/AbjyfUs47yA8kudfZOqMs7+UX4hw69bwkmO8lMBh2cV7YDydpT5pX7ERZ3lyqoyFkIAywHlAzP9AEs5AKmZUEA9cpqCvjp5dNxhPfZ+FbeJMc2s5TOx0CO29B6KcW3iITZ+OgtgA+86l3uW834kmsQL1rIAZuW71GtRtkc/Mhyx7Tzug0kAAAAASUVORK5CYII=",
+                    fit: [fit, fit]
+                });
+            }
+        }
+    }
+    return result;
+}
+
 const valuesToJson = (values, type = "list") => {
     const stack = [];
     switch (type) {
@@ -92,7 +119,7 @@ const valuesToJson = (values, type = "list") => {
                     width: '33%',
                     stack: [
                         { text: element.title, style: 'subtitle' },
-                        { text: element.value, style: 'text' }
+                        { columns: generateStars(element.value) }
                     ]
                 }
                 col.push(item);
@@ -169,15 +196,12 @@ export const GeneratePDF = (data) => {
                                 { text: data.education.title, style: 'title' },
                                 " ",
                                 [...valuesToJson(data.education.values, "education")],
-                                " ",
                                 { text: data.experience.title, style: 'title' },
                                 " ",
                                 [...valuesToJson(data.experience.values, "experience")],
-                                " ",
                                 { text: data.certifications.title, style: 'title' },
                                 " ",
                                 [...valuesToJson(data.certifications.values, "education")],
-                                " ",
                                 { text: data.competences.title, style: 'title' },
                                 " ",
                                 [...valuesToJson(data.competences.values, "competence")],
