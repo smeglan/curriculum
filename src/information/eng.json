@@ -119,6 +119,13 @@
                 "link": "https://coursera.org/share/4594786dddaabfe015d7acce6ebac475"
             },
             {
+                "title": " Getting Started With Application Development",
+                "institution": "Coursera",
+                "location": "Virtual",
+                "date": "April 2021",
+                "link": "https://coursera.org/share/bf09aa88690b53c6340aed045e06504f"
+            },
+            {
                 "title": "Automation in industrial processes",
                 "institution": "SENA",
                 "location": "Manizales",
@@ -167,15 +174,15 @@
         "values": [
             {
                 "title": "Javascript",
-                "value": 5
+                "value": 4.5
             },
             {
                 "title": "React.js",
-                "value": 5
+                "value": 4.5
             },
             {
                 "title": "React Native",
-                "value": 5
+                "value": 4.5
             },
             {
                 "title": "C#",
@@ -208,6 +215,10 @@
             {
                 "title": "PHP",
                 "value": 3
+            },
+            {
+                "title": "Google cloud",
+                "value": 1.5
             }
         ]
     }

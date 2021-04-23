@@ -7,7 +7,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { HeaderBlock } from './components/header-block';
 import { Competence } from './components/competence';
 import { References } from './components/references';
-import { faGlobe } from '@fortawesome/free-solid-svg-icons';
+import { faFileDownload, faFilePdf, faGlobe } from '@fortawesome/free-solid-svg-icons';
 import { GeneratePDF } from '../../shared/components/pdf-generator';
 //import { faFileDownload } from '@fortawesome/free-solid-svg-icons';
 export class Home extends PureComponent {
@@ -75,7 +75,7 @@ export class Home extends PureComponent {
                                         })}
                                     </Dropdown.Menu>
                                 </Dropdown>
-                                <Button style={{margin:10}} variant="dark" onClick={this.downloadPDF}>PDF(En contrucción)</Button>
+                                <Button style={{margin:10}} variant="dark" onClick={this.downloadPDF}><FontAwesomeIcon icon={faFileDownload} /> {this.state.data.language ==="esp"?" Descargar ":" Download "}</Button>
                             </Col>
                         </Row>
                     </Col>
@@ -189,8 +189,8 @@ export class Home extends PureComponent {
                                 <Row>
                                     {this.state.data.competences.values.map((item, i) => {
                                         return (
-                                            <Col md={4}>
-                                                <ItemBlock key={"competence" + i} title={item.title}>
+                                            <Col md={4} key={"competence" + i}>
+                                                <ItemBlock title={item.title}>
                                                     <Competence points={item.value}></Competence>
                                                 </ItemBlock>
                                             </Col>
