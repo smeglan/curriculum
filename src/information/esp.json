@@ -170,35 +170,35 @@
         "values": [
             {
                 "title": "Javascript",
-                "value": 4.5
-            },
-            {
-                "title": "React.js",
-                "value": 4.5
-            },
-            {
-                "title": "React Native",
-                "value": 4.5
-            },
-            {
-                "title": "C#",
                 "value": 4
             },
             {
-                "title": "Express.js",
+                "title": "React.js",
+                "value": 3.5
+            },
+            {
+                "title": "React Native",
+                "value": 3.5
+            },
+            {
+                "title": "C#",
                 "value": 3
+            },
+            {
+                "title": "Express.js",
+                "value": 2
             },
             {
                 "title": "MongoDB",
-                "value": 3
+                "value": 2
             },
             {
                 "title": "Angular.js",
-                "value": 3
+                "value": 2
             },
             {
                 "title": "ASP.NET",
-                "value": 3
+                "value": 2
             },
             {
                 "title": "Java",
@@ -210,7 +210,7 @@
             },
             {
                 "title": "PHP",
-                "value": 3
+                "value": 2
             },
             {
                 "title": "Google cloud",
