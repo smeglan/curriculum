@@ -249,7 +249,7 @@ export const GeneratePDF = (data) => {
                                 " ",
                                 [...valuesToJson(data.competences.values, "competence")],
                                 " ",
-                                { text: data.competences.title, style: 'title' },
+                                { text: data.references.title, style: 'title' },
                                 " ",
                                 [...valuesToJson(data.references.values, "reference")],
                                 " ",
