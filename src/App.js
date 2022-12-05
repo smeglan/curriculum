@@ -1,5 +1,5 @@
-import { Home } from "./screens/home/home";
-import { Footer } from "./shared/components/footer";
+import { Home } from "./screens/home/home.js";
+import { Footer } from "./shared/components/footer.js";
 import {
   BrowserRouter as Router,
   Switch,

@@ -6,8 +6,8 @@ import { faGithub, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { HeaderBlock } from './components/header-block';
 import { Competence } from './components/competence';
-import { References } from './components/references';
-import { faFileDownload, faFilePdf, faGlobe } from '@fortawesome/free-solid-svg-icons';
+import { References } from './components/references.tsx';
+import { faFileDownload, faGlobe } from '@fortawesome/free-solid-svg-icons';
 import { GeneratePDF } from '../../shared/components/pdf-generator';
 //import { faFileDownload } from '@fortawesome/free-solid-svg-icons';
 export class Home extends PureComponent {
