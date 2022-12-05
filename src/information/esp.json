@@ -36,7 +36,7 @@
             },
             {
                 "title": "Japónes",
-                "value": "Basico"
+                "value": "Principiante"
             }
         ]
     },
@@ -54,12 +54,13 @@
         "title": "HOBBIES",
         "values": [
             "Modelado 3D",
+            "Desarrollo de juegos",
             "Videojuegos"
         ]
     },
     "profile": {
         "title": "PERFIL",
-        "value": "Técnico en desarrollo de software y estudiante de ultimo semestre de ingenieria de sistemas y computación, con mas de un año de experiencia en desarrollo e integración de aplicaciones web y móvil, bajo frameworks basados en node.js. Responsable, autodidacta, honesto y eficaz en tareas de desarrollo."
+        "value": "Ingeniero de sistemas de computacionn, con mas 2 años de experiencia en desarrollo e integración de aplicaciones web y móvil, bajo frameworks basados en node.js, con pasion por el desarrollo de juegos indie. Responsable, autodidacta, honesto y eficaz en tareas de desarrollo."
     },
     "education": {
         "title": "EDUCACIÓN",
@@ -68,13 +69,13 @@
                 "title": "Ingenieria de sistemas y computación",
                 "institution": "Universidad de Caldas",
                 "location": "Manizales",
-                "date": "2013 - presente"
+                "date": "2022"
             },
             {
                 "title": "Técnico en programación de software",
                 "institution": "SENA",
                 "location": "Manizales",
-                "date": "2010 - 2012"
+                "date": "2012"
             }
         ]
     },
@@ -82,10 +83,17 @@
         "title": "EXPERIENCIA LABORAL",
         "values": [
             {
+                "title": "Backend Junior developer",
+                "institution": "Condorlabs",
+                "location": "Remoto",
+                "date": "agosto 2021 - presente",
+                "description": "Desarrollo y soporte de sistemas de verificacion de licencias de personal medico para hospitales en USA"
+            },
+            {
                 "title": "Ingeniero desarrollador de software",
                 "institution": "Reactiva soporte y desarrollo",
                 "location": "Manizales",
-                "date": "Enero 2020 - presente",
+                "date": "Enero 2020 - agosto 2021",
                 "description": "Desarrollo, mantenimiento, soporte e integración de aplicativos web y móvil basados en React.js, diseño de sistemas con pasarelas de pago y capacitación de personal."
             },
             {
@@ -130,37 +138,6 @@
             }
         ]
     },
-    "references": {
-        "title": "REFERENCIAS",
-        "values": {
-            "labor": {
-                "title": "Laborales",
-                "values": [
-                    {
-                        "name": "Alfonso Delgado Santofimio",
-                        "phone": "3208503506"
-                    },
-                    {
-                        "name": "Cristian Camilo Gutierrez(excompañero)",
-                        "phone": "3104629798"
-                    }
-                ]
-            },
-            "personal": {
-                "title": "Personales",
-                "values": [
-                    {
-                        "name": "Mateo Isaac Padierna",
-                        "phone": "3194066373"
-                    },
-                    {
-                        "name": "Juan Manuel Zuluaga",
-                        "phone": "3187587898"
-                    }
-                ]
-            }
-        }
-    },
     "competences": {
         "title": "COMPETENCIAS",
         "values": [
@@ -178,15 +155,19 @@
             },
             {
                 "title": "C#",
-                "value": 3
+                "value": 3.5
+            },
+            {
+                "title": "Unity",
+                "value": 4
             },
             {
                 "title": "Express.js",
-                "value": 2
+                "value": 4
             },
             {
                 "title": "MongoDB",
-                "value": 2
+                "value": 4
             },
             {
                 "title": "Angular.js",
@@ -194,7 +175,7 @@
             },
             {
                 "title": "ASP.NET",
-                "value": 2
+                "value": 4
             },
             {
                 "title": "Java",
@@ -211,6 +192,10 @@
             {
                 "title": "Google cloud",
                 "value": 1.5
+            },
+            {
+                "title": "AWS",
+                "value": 2.5
             }
         ]
     }

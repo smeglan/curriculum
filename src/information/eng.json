@@ -63,7 +63,7 @@
     },
     "profile": {
         "title": "PROFILE",
-        "value": "Technician in software development and last semester student of systems and computing engineering, with more than one year of experience in development and integration of web and mobile applications, under frameworks based on node.js. Responsible, self-taught, honest and effective in development tasks."
+        "value": "Computer systems engineer, with more than 2 years of experience in development and integration of web and mobile applications, under node.js-based frameworks, with a passion for developing indie games. Responsible, self-taught, honest and effective in development tasks."
     },
     "education": {
         "title": "EDUCATION",
@@ -72,13 +72,13 @@
                 "title": "Computer and systems engineering",
                 "institution": "Caldas University",
                 "location": "Manizales",
-                "date": "2013 - now"
+                "date": "2022"
             },
             {
                 "title": "Software programming technician",
                 "institution": "SENA",
                 "location": "Manizales",
-                "date": "2010 - 2012"
+                "date": "2012"
             }
         ]
     },
@@ -86,10 +86,17 @@
         "title": "WORK EXPERIENCE",
         "values": [
             {
+                "title": "Backend Junior developer",
+                "institution": "Condorlabs",
+                "location": "Remoto",
+                "date": "August 2021 - present",
+                "description": "Development and support of verification systems for medical personnel licenses for hospitals in the USA"
+            },
+            {
                 "title": "Software developer engineer",
                 "institution": "Reactiva support and development",
                 "location": "Manizales",
-                "date": "Jan 2020 - presente",
+                "date": "Jan 2020 - August 2021",
                 "description": "Development, maintenance, support and integration of web and mobile applications based on React.js, system design with payment gateways and staff training."
             },
             {
@@ -134,37 +141,6 @@
             }
         ]
     },
-    "references": {
-        "title": "REFERENCES",
-        "values": {
-            "labor": {
-                "title": "Labor",
-                "values": [
-                    {
-                        "name": "Alfonso Delgado Santofimio",
-                        "phone": "3208503506"
-                    },
-                    {
-                        "name": "Cristian Camilo Gutierrez",
-                        "phone": "3104629798"
-                    }
-                ]
-            },
-            "personal": {
-                "title": "Personal",
-                "values": [
-                    {
-                        "name": "Mateo Isaac Padierna",
-                        "phone": "3194066373"
-                    },
-                    {
-                        "name": "Juan Manuel Zuluaga",
-                        "phone": "3187587898"
-                    }
-                ]
-            }
-        }
-    },
     "competences": {
         "title": "COMPETENCES",
         "values": [
@@ -182,15 +158,19 @@
             },
             {
                 "title": "C#",
-                "value": 3
+                "value": 3.5
+            },
+            {
+                "title": "Unity",
+                "value": 4
             },
             {
                 "title": "Express.js",
-                "value": 2
+                "value": 4
             },
             {
                 "title": "MongoDB",
-                "value": 2
+                "value": 4
             },
             {
                 "title": "Angular.js",
@@ -198,7 +178,7 @@
             },
             {
                 "title": "ASP.NET",
-                "value": 2
+                "value": 4
             },
             {
                 "title": "Java",
@@ -215,6 +195,10 @@
             {
                 "title": "Google cloud",
                 "value": 1.5
+            },
+            {
+                "title": "AWS",
+                "value": 2.5
             }
         ]
     }
