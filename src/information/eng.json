@@ -1,0 +1,218 @@
+{
+	"language": "esp",
+	"image": "Avatar",
+	"curriculum": "https://curriculumfinal.vercel.app/esp",
+	"name": "SEBASTIÁN NOREÑA MEGLAN",
+	"position": "COMPUTER AND SYSTEMS ENGINEER",
+	"contactInformation": {
+		"title": "INFORMACIÓN",
+		"items": [
+			{
+				"type": "Phone",
+				"value": "3104395956"
+			},
+			{
+				"type": "Email",
+				"value": "sebastiannmeglan@gmail.com"
+			}
+		]
+	},
+	"links": {
+		"title": "SOCIAL",
+		"items": [
+			{
+				"type": "LinkedIn",
+				"value": "Sebastian Noreña",
+				"url": "https://www.linkedin.com/in/sebastian-noreña-meglan-50534b199/"
+			},
+			{
+				"type": "GitHub",
+				"value": "github.com/smeglan",
+				"url": "https://github.com/smeglan"
+			}
+		]
+	},
+	"languages": {
+		"title": "IDIOMAS",
+		"items": [
+			{
+				"language": "Español",
+				"level": "Nativo"
+			},
+			{
+				"language": "Ingles",
+				"level": "Intermedio"
+			},
+			{
+				"language": "Japonés",
+				"level": "Básico"
+			}
+		]
+	},
+	"hobbies": {
+		"title": "HOBBIES",
+		"items": [
+			"Videojuegos",
+			"Desarrollo de videojuegos"
+		]
+	},
+	"profile": {
+		"title": "PERFIL",
+		"value": "Ingeniero de sistemas de computación, con 4 años de experiencia como desarrollador principalmente en el stack de tecnologías MERN, con conocimiento en aplicaciones tanto web, como moviles, responsable y motivado."
+	},
+	"education": {
+		"title": "EDUCACIÓN",
+		"items": [
+			{
+				"title": "Ingeniería de sistemas y computación",
+				"institution": "Universidad de Caldas",
+				"location": "Manizales",
+				"date": "2022"
+			},
+			{
+				"title": "Técnico en programación de software",
+				"institution": "SENA",
+				"location": "Manizales",
+				"date": "2012"
+			}
+		]
+	},
+	"experience": {
+		"title": "EXPERIENCIA LABORAL",
+		"items": [
+			{
+				"cardTitle": "Game developer",
+				"cardSubtitle": "Elevomedia - Remoto",
+				"title": "Enero 2023 Mayo 2023",
+				"cardDetailedText": "► Desarrollo de prototipo minimo viable de juego de gestión de granja."
+			},
+			{
+				"cardTitle": "Backend Junior developer",
+				"cardSubtitle": "Condorlabs - Remoto",
+				"location": "",
+				"title": "Agosto 2021 Enero 2023",
+				"cardDetailedText": "► Desarrollo y soporte de sistemas de verificación de licencias de personal medico para hospitales en los Estados Unidos de America."
+			},
+			{
+				"cardTitle": "Desarrollador de software",
+				"cardSubtitle": "Desarrollo Eficaz - Remoto",
+				"title": "Julio 2020 Octubre 2020",
+				"cardDetailedText": "► Desarrollo de pagina web con integración con payU para tatuadores de manera remota."
+			},
+			{
+				"cardTitle": "Ingeniero desarrollador de software",
+				"cardSubtitle": "Reactiva soporte y desarrollo - Manizales",
+				"title": "Junio 2019 Agosto 2021",
+				"cardDetailedText": "► Desarrollo, mantenimiento, soporte e integración de aplicativos web, pasarelas de pago y aplicaciones móvil en base a Odoo, React.js y React Native."
+			}
+		]
+	},
+	"courses": {
+		"title": "CERTIFICADOS",
+		"items": [
+			{
+				"title": "Expert PRO PRINCIPIOS DE C#",
+				"institution": "UA expert",
+				"location": "Virtual",
+				"date": "2021",
+				"source": "https://drive.google.com/file/d/16fYkBNX5MT6ASlRJAOdXU_t6zp1DRAN-/view?usp=sharing"
+			},
+			{
+				"title": "Google Cloud Platform Fundamentals: Core Infrastructure",
+				"institution": "Coursera",
+				"location": "Virtual",
+				"date": "2021",
+				"source": "https://coursera.org/share/4594786dddaabfe015d7acce6ebac475"
+			},
+			{
+				"title": " Getting Started With Application Development",
+				"institution": "Coursera",
+				"location": "Virtual",
+				"date": "2021",
+				"source": "https://coursera.org/share/bf09aa88690b53c6340aed045e06504f"
+			},
+			{
+				"title": "Automatización en procesos industriales",
+				"institution": "SENA",
+				"location": "Manizales",
+				"date": "2017",
+				"source": "https://drive.google.com/file/d/11a3S_opgITSano29lfRuY94ge0DYRWxY/view?usp=sharing"
+			}
+		]
+	},
+	"skills": {
+		"title": "COMPETENCIAS",
+		"items": [
+			{
+				"title": "Javascript",
+				"value": 90,
+				"source": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+			},
+			{
+				"title": "Typescript",
+				"value": 80,
+				"source": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"
+			},
+			{
+				"title": "SQL",
+				"value": 80
+			},
+			{
+				"title": "C#",
+				"value": 60,
+				"source": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg"
+			},
+			{
+				"title": "Python",
+				"value": 60,
+				"source": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
+			},
+			{
+				"title": "Node.js",
+				"value": 86,
+				"source": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original-wordmark.svg"
+			},
+			{
+				"title": "React.js",
+				"value": 70,
+				"source": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+			},
+			{
+				"title": "Native",
+				"value": 70,
+				"source": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+			},
+			{
+				"title": "Angular.js",
+				"value": 50,
+				"source": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg"
+			},
+			{
+				"title": "Express.js",
+				"value": 80,
+				"source": "ExpressLogo",
+				"isLocal": true
+			},
+			{
+				"title": "MongoDB",
+				"value": 80,
+				"source": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg"
+			},
+			{
+				"title": "Unity",
+				"value": 60,
+				"source": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/unity/unity-original.svg"
+			},
+			{
+				"title": "Google cloud",
+				"value": 60,
+				"source": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/googlecloud/googlecloud-original.svg"
+			},
+			{
+				"title": "AWS",
+				"value": 60,
+				"source": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-plain-wordmark.svg"
+			}
+		]
+	}
+}
