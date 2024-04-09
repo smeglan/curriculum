@@ -1,10 +1,11 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import { Provider } from './routes/Provider';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import { Provider } from "./routes";
+import "./index.css";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-  <React.StrictMode>
-    <Provider />
-  </React.StrictMode>
+	<React.StrictMode>
+		<Provider />
+	</React.StrictMode>
 );

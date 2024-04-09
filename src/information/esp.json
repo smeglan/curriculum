@@ -1,202 +1,218 @@
 {
-    "language": "esp",
-    "curriculum": "https://curriculumfinal.vercel.app/esp",
-    "name": "SEBASTIÁN NOREÑA MEGLAN",
-    "position": "DESARROLLADOR DE SOFTWARE",
-    "information": {
-        "title": "INFORMACIÓN",
-        "values": [
-            {
-                "icon": "phone",
-                "value": "3104395956"
-            },
-            {
-                "icon": "email",
-                "value": "sebastiannmeglan@gmail.com"
-            }
-        ]
-    },
-    "links": {
-        "title": "SOCIAL",
-        "values": {
-            "linkedIn": "https://www.linkedin.com/in/sebastian-noreña-meglan-50534b199/",
-            "github": "https://github.com/smeglan"
-        }
-    },
-    "languages": {
-        "title": "IDIOMAS",
-        "values": [
-            {
-                "title": "Español",
-                "value": "Nativo"
-            },
-            {
-                "title": "Ingles",
-                "value": "Intermedio"
-            },
-            {
-                "title": "Japónes",
-                "value": "Basico"
-            }
-        ]
-    },
-    "skills": {
-        "title": "HABILIDADES",
-        "values": [ 
-            "Adaptable", 
-            "Autogestión",
-            "Liderazgo",
-            "Integridad",
-            "Etica de trabajo"
-        ]
-    },
-    "hobbies": {
-        "title": "HOBBIES",
-        "values": [
-            "Modelado 3D",
-            "Desarrollo de juegos",
-            "Videojuegos"
-        ]
-    },
-    "profile": {
-        "title": "PERFIL",
-        "value": "Ingeniero de sistemas de computacionn, con mas 2 años de experiencia en desarrollo e integración de aplicaciones web y móvil, bajo frameworks basados en node.js, con pasion por el desarrollo de juegos indie. Responsable, autodidacta, honesto y eficaz en tareas de desarrollo."
-    },
-    "education": {
-        "title": "EDUCACIÓN",
-        "values": [
-            {
-                "title": "Ingenieria de sistemas y computación",
-                "institution": "Universidad de Caldas",
-                "location": "Manizales",
-                "date": "2022"
-            },
-            {
-                "title": "Técnico en programación de software",
-                "institution": "SENA",
-                "location": "Manizales",
-                "date": "2012"
-            }
-        ]
-    },
-    "experience": {
-        "title": "EXPERIENCIA LABORAL",
-        "values": [
-            {
-                "title": "Backend Junior developer",
-                "institution": "Condorlabs",
-                "location": "Remoto",
-                "date": "Agosto 2021 - presente",
-                "description": "Desarrollo y soporte de sistemas de verificacion de licencias de personal medico para hospitales en USA"
-            },
-            {
-                "title": "Ingeniero desarrollador de software",
-                "institution": "Reactiva soporte y desarrollo",
-                "location": "Manizales",
-                "date": "Enero 2020 - agosto 2021",
-                "description": "Desarrollo, mantenimiento, soporte e integración de aplicativos web y móvil basados en React.js, diseño de sistemas con pasarelas de pago y capacitación de personal."
-            },
-            {
-                "title": "Desarrollador de software",
-                "institution": "Desarrollo Eficaz",
-                "location": "Remoto",
-                "date": "Julio 2020 - Septiembre 2020",
-                "description": "Desarrollo e integración de pagina web(frontend y backend) con integración con payU para tatuadores de manera remota."
-            }
-        ]
-    },
-    "certifications": {
-        "title": "CERTIFICACIONES",
-        "values": [
-            {
-                "title": "Expert PRO PRINCIPIOS DE C#",
-                "institution": "UA expert",
-                "location": "Virtual",
-                "date": "Febrero 2021",
-                "link": "https://drive.google.com/file/d/16fYkBNX5MT6ASlRJAOdXU_t6zp1DRAN-/view?usp=sharing"
-            },
-            {
-                "title": "Google Cloud Platform Fundamentals: Core Infrastructure",
-                "institution": "Coursera",
-                "location": "Virtual",
-                "date": "Febrero 2021",
-                "link": "https://coursera.org/share/4594786dddaabfe015d7acce6ebac475"
-            },
-            {
-                "title": " Getting Started With Application Development",
-                "institution": "Coursera",
-                "location": "Virtual",
-                "date": "Abril 2021",
-                "link": "https://coursera.org/share/bf09aa88690b53c6340aed045e06504f"
-            },
-            {
-                "title": "Automatización en procesos industriales",
-                "institution": "SENA",
-                "location": "Manizales",
-                "date": "2017",
-                "link": "https://drive.google.com/file/d/11a3S_opgITSano29lfRuY94ge0DYRWxY/view?usp=sharing"
-            }
-        ]
-    },
-    "competences": {
-        "title": "COMPETENCIAS",
-        "values": [
-            {
-                "title": "Javascript",
-                "value": 4
-            },
-            {
-                "title": "React.js",
-                "value": 3.5
-            },
-            {
-                "title": "React Native",
-                "value": 3.5
-            },
-            {
-                "title": "C#",
-                "value": 3.5
-            },
-            {
-                "title": "Unity",
-                "value": 4
-            },
-            {
-                "title": "Express.js",
-                "value": 4
-            },
-            {
-                "title": "MongoDB",
-                "value": 4
-            },
-            {
-                "title": "Angular.js",
-                "value": 2
-            },
-            {
-                "title": "ASP.NET",
-                "value": 4
-            },
-            {
-                "title": "Java",
-                "value": 3
-            },
-            {
-                "title": "Python",
-                "value": 3
-            },
-            {
-                "title": "PHP",
-                "value": 2
-            },
-            {
-                "title": "Google cloud",
-                "value": 1.5
-            },
-            {
-                "title": "AWS",
-                "value": 2.5
-            }
-        ]
-    }
+	"language": "esp",
+	"image": "Avatar",
+	"curriculum": "https://curriculumfinal.vercel.app/esp",
+	"name": "SEBASTIÁN NOREÑA MEGLAN",
+	"position": "INGENIERO DE SISTEMAS Y COMPUTACIÓN",
+	"contactInformation": {
+		"title": "INFORMACIÓN",
+		"items": [
+			{
+				"type": "Phone",
+				"value": "3104395956"
+			},
+			{
+				"type": "Email",
+				"value": "sebastiannmeglan@gmail.com"
+			}
+		]
+	},
+	"links": {
+		"title": "SOCIAL",
+		"items": [
+			{
+				"type": "LinkedIn",
+				"value": "Sebastian Noreña",
+				"url": "https://www.linkedin.com/in/sebastian-noreña-meglan-50534b199/"
+			},
+			{
+				"type": "GitHub",
+				"value": "github.com/smeglan",
+				"url": "https://github.com/smeglan"
+			}
+		]
+	},
+	"languages": {
+		"title": "IDIOMAS",
+		"items": [
+			{
+				"language": "Español",
+				"level": "Nativo"
+			},
+			{
+				"language": "Ingles",
+				"level": "Intermedio"
+			},
+			{
+				"language": "Japonés",
+				"level": "Básico"
+			}
+		]
+	},
+	"hobbies": {
+		"title": "HOBBIES",
+		"items": [
+			"Videojuegos",
+			"Desarrollo de videojuegos"
+		]
+	},
+	"profile": {
+		"title": "PERFIL",
+		"value": "Ingeniero de sistemas de computación, con 4 años de experiencia como desarrollador principalmente en el stack de tecnologías MERN, con conocimiento en aplicaciones tanto web, como moviles, responsable y motivado."
+	},
+	"education": {
+		"title": "EDUCACIÓN",
+		"items": [
+			{
+				"title": "Ingeniería de sistemas y computación",
+				"institution": "Universidad de Caldas",
+				"location": "Manizales",
+				"date": "2022"
+			},
+			{
+				"title": "Técnico en programación de software",
+				"institution": "SENA",
+				"location": "Manizales",
+				"date": "2012"
+			}
+		]
+	},
+	"experience": {
+		"title": "EXPERIENCIA LABORAL",
+		"items": [
+			{
+				"cardTitle": "Game developer",
+				"cardSubtitle": "Elevomedia - Remoto",
+				"title": "Enero 2023 Mayo 2023",
+				"cardDetailedText": "► Desarrollo de prototipo minimo viable de juego de gestión de granja."
+			},
+			{
+				"cardTitle": "Backend Junior developer",
+				"cardSubtitle": "Condorlabs - Remoto",
+				"location": "",
+				"title": "Agosto 2021 Enero 2023",
+				"cardDetailedText": "► Desarrollo y soporte de sistemas de verificación de licencias de personal medico para hospitales en los Estados Unidos de America."
+			},
+			{
+				"cardTitle": "Desarrollador de software",
+				"cardSubtitle": "Desarrollo Eficaz - Remoto",
+				"title": "Julio 2020 Octubre 2020",
+				"cardDetailedText": "► Desarrollo de pagina web con integración con payU para tatuadores de manera remota."
+			},
+			{
+				"cardTitle": "Ingeniero desarrollador de software",
+				"cardSubtitle": "Reactiva soporte y desarrollo - Manizales",
+				"title": "Junio 2019 Agosto 2021",
+				"cardDetailedText": "► Desarrollo, mantenimiento, soporte e integración de aplicativos web, pasarelas de pago y aplicaciones móvil en base a Odoo, React.js y React Native."
+			}
+		]
+	},
+	"courses": {
+		"title": "CERTIFICADOS",
+		"items": [
+			{
+				"title": "Expert PRO PRINCIPIOS DE C#",
+				"institution": "UA expert",
+				"location": "Virtual",
+				"date": "2021",
+				"source": "https://drive.google.com/file/d/16fYkBNX5MT6ASlRJAOdXU_t6zp1DRAN-/view?usp=sharing"
+			},
+			{
+				"title": "Google Cloud Platform Fundamentals: Core Infrastructure",
+				"institution": "Coursera",
+				"location": "Virtual",
+				"date": "2021",
+				"source": "https://coursera.org/share/4594786dddaabfe015d7acce6ebac475"
+			},
+			{
+				"title": " Getting Started With Application Development",
+				"institution": "Coursera",
+				"location": "Virtual",
+				"date": "2021",
+				"source": "https://coursera.org/share/bf09aa88690b53c6340aed045e06504f"
+			},
+			{
+				"title": "Automatización en procesos industriales",
+				"institution": "SENA",
+				"location": "Manizales",
+				"date": "2017",
+				"source": "https://drive.google.com/file/d/11a3S_opgITSano29lfRuY94ge0DYRWxY/view?usp=sharing"
+			}
+		]
+	},
+	"skills": {
+		"title": "COMPETENCIAS",
+		"items": [
+			{
+				"title": "Javascript",
+				"value": 90,
+				"source": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+			},
+			{
+				"title": "Typescript",
+				"value": 80,
+				"source": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"
+			},
+			{
+				"title": "SQL",
+				"value": 80
+			},
+			{
+				"title": "C#",
+				"value": 60,
+				"source": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg"
+			},
+			{
+				"title": "Python",
+				"value": 60,
+				"source": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
+			},
+			{
+				"title": "Node.js",
+				"value": 86,
+				"source": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original-wordmark.svg"
+			},
+			{
+				"title": "React.js",
+				"value": 70,
+				"source": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+			},
+			{
+				"title": "Native",
+				"value": 70,
+				"source": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+			},
+			{
+				"title": "Angular.js",
+				"value": 50,
+				"source": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg"
+			},
+			{
+				"title": "Express.js",
+				"value": 80,
+				"source": "ExpressLogo",
+				"isLocal": true
+			},
+			{
+				"title": "MongoDB",
+				"value": 80,
+				"source": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg"
+			},
+			{
+				"title": "Unity",
+				"value": 60,
+				"source": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/unity/unity-original.svg"
+			},
+			{
+				"title": "Google cloud",
+				"value": 60,
+				"source": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/googlecloud/googlecloud-original.svg"
+			},
+			{
+				"title": "AWS",
+				"value": 60,
+				"source": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-plain-wordmark.svg"
+			}
+		]
+	}
 }
