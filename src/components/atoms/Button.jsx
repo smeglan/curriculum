@@ -5,9 +5,9 @@ import { Icon } from '.';
 const theme = createTheme({
    palette: {
       primary: {
-         main: '#171717',
-         light: '#F5EBFF',
-         contrastText: '#47008F',
+         main: '#FFFFFF',
+         light: '#FFFFFF',
+         contrastText: '#FFFFFF',
       },
    },
 });

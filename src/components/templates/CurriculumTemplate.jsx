@@ -17,6 +17,7 @@ import { createRef } from "react";
 export const CurriculumTemplate = (props) => {
 	const {
 		data: {
+			language,
 			image,
 			name,
 			position,
@@ -30,13 +31,14 @@ export const CurriculumTemplate = (props) => {
 			courses,
 			skills,
 		},
+		changeLanguage
 	} = props;
 	const leftStyle = "dark";
 	const curriculumRef = createRef();
 	return (
 		<Grid>
-			<Grid>
-				<OptionBar pdfTarget={curriculumRef} />
+			<Grid style={{ backgroundColor: "#171717", marginBottom: 2 }}>
+				<OptionBar pdfTarget={curriculumRef} language={language} changeLanguage={changeLanguage}/>
 			</Grid>
 			<Grid ref={curriculumRef} id="curriculum" container>
 				<Grid md={3} lg={2} style={{ backgroundColor: "#171717" }} padding={2} item={true}>

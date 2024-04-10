@@ -11,11 +11,10 @@ export const Experience = (props) => {
 			<Divider color="#FDA228" sx={{ height: 2, width: '250px' }} />
 			<Grid padding={2}>
 				<Chrono
-
 					mode="VERTICAL"
 					items={items}
 					enableLayoutSwitch={false}
-					cardHeight={80}
+					cardHeight={81}
 					contentDetailsHeight={50}
 					disableToolbar={true}
 					classNames={{
@@ -35,25 +34,3 @@ export const Experience = (props) => {
 		</Grid>
 	);
 };
-
-/*export const Experience = (props) => {
-	const { title, items } = props;
-	return (
-		<Grid>
-			<Subtitle value={title} />
-			<Divider />
-			<Grid>
-				{items.map((item, i) => (
-					<JobItem
-						key={`${title}${i}`}
-						title={item.title}
-						date={item.date}
-						organization={item.organization}
-						location={item.location}
-						description={item.description}
-					/>
-				))}
-			</Grid>
-		</Grid>
-	);
-};*/

@@ -1,11 +1,11 @@
 {
-	"language": "esp",
+	"language": "eng",
 	"image": "Avatar",
-	"curriculum": "https://curriculumfinal.vercel.app/esp",
+	"curriculum": "https://curriculumfinal.vercel.app/eng",
 	"name": "SEBASTIÁN NOREÑA MEGLAN",
 	"position": "COMPUTER AND SYSTEMS ENGINEER",
 	"contactInformation": {
-		"title": "INFORMACIÓN",
+		"title": "CONTACT",
 		"items": [
 			{
 				"type": "Phone",
@@ -33,44 +33,44 @@
 		]
 	},
 	"languages": {
-		"title": "IDIOMAS",
+		"title": "LANGUAGES",
 		"items": [
 			{
-				"language": "Español",
-				"level": "Nativo"
+				"language": "Spanish",
+				"level": "Native"
 			},
 			{
-				"language": "Ingles",
-				"level": "Intermedio"
+				"language": "English",
+				"level": "Medium"
 			},
 			{
-				"language": "Japonés",
-				"level": "Básico"
+				"language": "Japanese",
+				"level": "Basic"
 			}
 		]
 	},
 	"hobbies": {
 		"title": "HOBBIES",
 		"items": [
-			"Videojuegos",
-			"Desarrollo de videojuegos"
+			"Videogames",
+			"Manga and Anime"
 		]
 	},
 	"profile": {
-		"title": "PERFIL",
-		"value": "Ingeniero de sistemas de computación, con 4 años de experiencia como desarrollador principalmente en el stack de tecnologías MERN, con conocimiento en aplicaciones tanto web, como moviles, responsable y motivado."
+		"title": "PROFILE",
+		"value": "Computer systems engineer, with 3 years of experience as a fullstack developer mainly in the MERN technology stack, with knowledge of web applications and APIs, responsible and flexible."
 	},
 	"education": {
-		"title": "EDUCACIÓN",
+		"title": "EDUCATION",
 		"items": [
 			{
-				"title": "Ingeniería de sistemas y computación",
-				"institution": "Universidad de Caldas",
+				"title": "Computer and system engineer",
+				"institution": "Caldas University",
 				"location": "Manizales",
 				"date": "2022"
 			},
 			{
-				"title": "Técnico en programación de software",
+				"title": "Software programming technician",
 				"institution": "SENA",
 				"location": "Manizales",
 				"date": "2012"
@@ -78,38 +78,45 @@
 		]
 	},
 	"experience": {
-		"title": "EXPERIENCIA LABORAL",
+		"title": "LABORAL EXPERIENCE",
 		"items": [
 			{
 				"cardTitle": "Game developer",
-				"cardSubtitle": "Elevomedia - Remoto",
-				"title": "Enero 2023 Mayo 2023",
-				"cardDetailedText": "► Desarrollo de prototipo minimo viable de juego de gestión de granja."
+				"cardSubtitle": "Elevomedia - Remote",
+				"title": "Jan 2023 May 2023",
+				"cardDetailedText": "► Development of a minimum viable prototype of a farm management game."
 			},
 			{
 				"cardTitle": "Backend Junior developer",
-				"cardSubtitle": "Condorlabs - Remoto",
+				"cardSubtitle": "Condorlabs - Remote",
 				"location": "",
-				"title": "Agosto 2021 Enero 2023",
-				"cardDetailedText": "► Desarrollo y soporte de sistemas de verificación de licencias de personal medico para hospitales en los Estados Unidos de America."
+				"title": "Aug 2021 Jan 2023",
+				"cardDetailedText": "► Development and support of medical personnel license verification systems for hospitals in the United States of America."
 			},
 			{
-				"cardTitle": "Desarrollador de software",
-				"cardSubtitle": "Desarrollo Eficaz - Remoto",
-				"title": "Julio 2020 Octubre 2020",
-				"cardDetailedText": "► Desarrollo de pagina web con integración con payU para tatuadores de manera remota."
+				"cardTitle": "Software developer",
+				"cardSubtitle": "Desarrollo Eficaz - Remote",
+				"title": "July 2020 Oct 2020",
+				"cardDetailedText": "► Website development with integration payU for remote tattoo artists."
 			},
 			{
-				"cardTitle": "Ingeniero desarrollador de software",
+				"cardTitle": "Software developer engineer",
 				"cardSubtitle": "Reactiva soporte y desarrollo - Manizales",
-				"title": "Junio 2019 Agosto 2021",
-				"cardDetailedText": "► Desarrollo, mantenimiento, soporte e integración de aplicativos web, pasarelas de pago y aplicaciones móvil en base a Odoo, React.js y React Native."
+				"title": "Jun 2019 Aug 2021",
+				"cardDetailedText": "► Development, maintenance, support and integration of web applications, payment gateways and mobile applications based on Odoo, React.js and React Native."
 			}
 		]
 	},
 	"courses": {
-		"title": "CERTIFICADOS",
+		"title": "COURSES",
 		"items": [
+			{
+				"title": "Developing Back-End Apps with Node.js and Express",
+				"institution": "Coursera",
+				"location": "Virtual",
+				"date": "2023",
+				"source": "https://coursera.org/share/83d23e0555506285ef8b6182079fbc83"
+			},
 			{
 				"title": "Expert PRO PRINCIPIOS DE C#",
 				"institution": "UA expert",
@@ -132,7 +139,7 @@
 				"source": "https://coursera.org/share/bf09aa88690b53c6340aed045e06504f"
 			},
 			{
-				"title": "Automatización en procesos industriales",
+				"title": "Automation in industrial processes",
 				"institution": "SENA",
 				"location": "Manizales",
 				"date": "2017",
@@ -141,7 +148,7 @@
 		]
 	},
 	"skills": {
-		"title": "COMPETENCIAS",
+		"title": "SKILLS",
 		"items": [
 			{
 				"title": "Javascript",
@@ -152,6 +159,31 @@
 				"title": "Typescript",
 				"value": 80,
 				"source": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"
+			},
+			{
+				"title": "Node.js",
+				"value": 86,
+				"source": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original-wordmark.svg"
+			},
+			{
+				"title": "React.js",
+				"value": 70,
+				"source": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+			},
+			{
+				"title": "Express.js",
+				"value": 80,
+				"source": "ExpressLogo"
+			},
+			{
+				"title": "MongoDB",
+				"value": 80,
+				"source": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg"
+			},
+			{
+				"title": "AWS",
+				"value": 60,
+				"source": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-plain-wordmark.svg"
 			},
 			{
 				"title": "SQL",
@@ -168,17 +200,7 @@
 				"source": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
 			},
 			{
-				"title": "Node.js",
-				"value": 86,
-				"source": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original-wordmark.svg"
-			},
-			{
-				"title": "React.js",
-				"value": 70,
-				"source": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
-			},
-			{
-				"title": "Native",
+				"title": "React Native",
 				"value": 70,
 				"source": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
 			},
@@ -188,30 +210,14 @@
 				"source": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg"
 			},
 			{
-				"title": "Express.js",
-				"value": 80,
-				"source": "ExpressLogo",
-				"isLocal": true
-			},
-			{
-				"title": "MongoDB",
-				"value": 80,
-				"source": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg"
-			},
-			{
 				"title": "Unity",
 				"value": 60,
 				"source": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/unity/unity-original.svg"
 			},
 			{
 				"title": "Google cloud",
-				"value": 60,
+				"value": 50,
 				"source": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/googlecloud/googlecloud-original.svg"
-			},
-			{
-				"title": "AWS",
-				"value": 60,
-				"source": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-plain-wordmark.svg"
 			}
 		]
 	}

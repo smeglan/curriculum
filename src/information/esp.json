@@ -53,12 +53,12 @@
 		"title": "HOBBIES",
 		"items": [
 			"Videojuegos",
-			"Desarrollo de videojuegos"
+			"Manga y Anime"
 		]
 	},
 	"profile": {
 		"title": "PERFIL",
-		"value": "Ingeniero de sistemas de computación, con 4 años de experiencia como desarrollador principalmente en el stack de tecnologías MERN, con conocimiento en aplicaciones tanto web, como moviles, responsable y motivado."
+		"value": "Ingeniero de sistemas de computación, con 3 años de experiencia como desarrollador fullstack principalmente en el stack de tecnologías MERN, con conocimiento en aplicaciones web y APIs, responsable y flexible."
 	},
 	"education": {
 		"title": "EDUCACIÓN",
@@ -111,6 +111,13 @@
 		"title": "CERTIFICADOS",
 		"items": [
 			{
+				"title": "Developing Back-End Apps with Node.js and Express",
+				"institution": "Coursera",
+				"location": "Virtual",
+				"date": "2023",
+				"source": "https://coursera.org/share/83d23e0555506285ef8b6182079fbc83"
+			},
+			{
 				"title": "Expert PRO PRINCIPIOS DE C#",
 				"institution": "UA expert",
 				"location": "Virtual",
@@ -154,6 +161,31 @@
 				"source": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"
 			},
 			{
+				"title": "Node.js",
+				"value": 86,
+				"source": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original-wordmark.svg"
+			},
+			{
+				"title": "React.js",
+				"value": 70,
+				"source": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+			},
+			{
+				"title": "Express.js",
+				"value": 80,
+				"source": "ExpressLogo"
+			},
+			{
+				"title": "MongoDB",
+				"value": 80,
+				"source": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg"
+			},
+			{
+				"title": "AWS",
+				"value": 60,
+				"source": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-plain-wordmark.svg"
+			},
+			{
 				"title": "SQL",
 				"value": 80
 			},
@@ -168,17 +200,7 @@
 				"source": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
 			},
 			{
-				"title": "Node.js",
-				"value": 86,
-				"source": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original-wordmark.svg"
-			},
-			{
-				"title": "React.js",
-				"value": 70,
-				"source": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
-			},
-			{
-				"title": "Native",
+				"title": "React Native",
 				"value": 70,
 				"source": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
 			},
@@ -188,30 +210,14 @@
 				"source": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg"
 			},
 			{
-				"title": "Express.js",
-				"value": 80,
-				"source": "ExpressLogo",
-				"isLocal": true
-			},
-			{
-				"title": "MongoDB",
-				"value": 80,
-				"source": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg"
-			},
-			{
 				"title": "Unity",
 				"value": 60,
 				"source": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/unity/unity-original.svg"
 			},
 			{
 				"title": "Google cloud",
-				"value": 60,
+				"value": 50,
 				"source": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/googlecloud/googlecloud-original.svg"
-			},
-			{
-				"title": "AWS",
-				"value": 60,
-				"source": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-plain-wordmark.svg"
 			}
 		]
 	}
