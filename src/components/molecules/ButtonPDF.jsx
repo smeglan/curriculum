@@ -8,7 +8,7 @@ export const ButtonPDF = (props) => {
    const renderPDF = async () => {
       generatePDF(targetRef, {
          filename: filename,
-         resolution: 6,
+         resolution: 3,
          page: {
             margin: 20,
             format: 'A4',
