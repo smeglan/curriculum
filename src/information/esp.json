@@ -41,11 +41,11 @@
 			},
 			{
 				"language": "Ingles",
-				"level": "Intermedio"
+				"level": "B2 - Intermedio"
 			},
 			{
 				"language": "Japonés",
-				"level": "Básico"
+				"level": "A1 - Básico"
 			}
 		]
 	},
@@ -67,7 +67,7 @@
 				"title": "Ingeniería de sistemas y computación",
 				"institution": "Universidad de Caldas",
 				"location": "Manizales",
-				"date": "2022"
+				"date": "2021"
 			},
 			{
 				"title": "Técnico en programación de software",
