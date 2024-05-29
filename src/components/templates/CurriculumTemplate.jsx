@@ -13,6 +13,8 @@ import {
 } from "../organisms";
 import { AvatarSphere } from "../atoms";
 import { createRef } from "react";
+import { PDF } from "../../handlers/PDF";
+import { CustomButton } from "../atoms/Button";
 
 export const CurriculumTemplate = (props) => {
 	const {
@@ -35,9 +37,13 @@ export const CurriculumTemplate = (props) => {
 	} = props;
 	const leftStyle = "dark";
 	const curriculumRef = createRef();
+	const Test = () =>{
+		PDF.generateCV(props.data);
+	}
 	return (
 		<Grid>
 			<Grid style={{ backgroundColor: "#171717", marginBottom: 2 }}>
+				<CustomButton text="TEST" startIcon="Print" onClick={Test}/>
 				<OptionBar filename={`${name} - CV`} pdfTarget={curriculumRef} language={language} changeLanguage={changeLanguage}/>
 			</Grid>
 			<Grid ref={curriculumRef} id="curriculum" container>
