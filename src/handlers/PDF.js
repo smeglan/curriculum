@@ -88,6 +88,7 @@ class PDFGen {
         const size = this.COL_SIZE.RIGHT;
         this.doc.setFont(this.font, 'bold');
         this.doc.setFontSize(this.TITLE_SIZE);
+        this.doc.line(col, this.rows.right+1, col+size, this.rows.right+1);
         this.writeLine(this.profile.title, col, colName, size);
         this.doc.setFontSize(10);
         this.doc.setFont(this.font, 'normal');
@@ -101,6 +102,7 @@ class PDFGen {
     writeList(block, col, row, size, type = "line"){
         this.doc.setFont(this.font, 'bold');
         this.doc.setFontSize(this.TITLE_SIZE);
+        this.doc.line(col, this.rows[row]+1, col+size, this.rows[row]+1);
         this.writeLine(block.title, col, row,size);
         this.doc.setFontSize(10);
         this.doc.setFont(this.font, 'normal');
