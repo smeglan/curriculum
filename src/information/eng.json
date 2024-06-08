@@ -36,15 +36,15 @@
 		"title": "LANGUAGES",
 		"items": [
 			{
-				"language": "Spanish",
+				"value": "Spanish",
 				"level": "Native"
 			},
 			{
-				"language": "English",
+				"value": "English",
 				"level": "B2"
 			},
 			{
-				"language": "Japanese",
+				"value": "Japanese",
 				"level": "A1"
 			}
 		]
@@ -81,29 +81,22 @@
 		"title": "LABORAL EXPERIENCE",
 		"items": [
 			{
-				"cardTitle": "Game developer",
-				"cardSubtitle": "Elevomedia - Remote",
-				"title": "Jan 2023 May 2023",
-				"cardDetailedText": "► Development of a minimum viable prototype of a farm management game."
+				"title": "Backend Junior developer",
+				"company": "Condorlabs - Remote",
+				"date": "Aug 2021 Jan 2023",
+				"description": "► Development and support of medical personnel license verification systems for hospitals in the United States of America."
 			},
 			{
-				"cardTitle": "Backend Junior developer",
-				"cardSubtitle": "Condorlabs - Remote",
-				"location": "",
-				"title": "Aug 2021 Jan 2023",
-				"cardDetailedText": "► Development and support of medical personnel license verification systems for hospitals in the United States of America."
+				"title": "Software developer",
+				"company": "Desarrollo Eficaz - Remote",
+				"date": "July 2020 Oct 2020",
+				"description": "► Website development with integration payU for remote tattoo artists."
 			},
 			{
-				"cardTitle": "Software developer",
-				"cardSubtitle": "Desarrollo Eficaz - Remote",
-				"title": "July 2020 Oct 2020",
-				"cardDetailedText": "► Website development with integration payU for remote tattoo artists."
-			},
-			{
-				"cardTitle": "Software developer engineer",
-				"cardSubtitle": "Reactiva soporte y desarrollo - Manizales",
-				"title": "Jun 2019 Aug 2021",
-				"cardDetailedText": "► Development, maintenance, support and integration of web applications, payment gateways and mobile applications based on Odoo, React.js and React Native."
+				"title": "Software developer engineer",
+				"company": "Reactiva soporte y desarrollo - Manizales",
+				"date": "Jun 2019 Aug 2021",
+				"description": "► Development, maintenance, support and integration of web applications, payment gateways and mobile applications based on Odoo, React.js and React Native."
 			}
 		]
 	},
@@ -151,72 +144,72 @@
 		"title": "SKILLS",
 		"items": [
 			{
-				"title": "Javascript",
-				"value": 90,
+				"value": "Javascript",
+				"level": 90,
 				"source": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
 			},
 			{
-				"title": "Typescript",
-				"value": 80,
+				"value": "Typescript",
+				"level": 80,
 				"source": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"
 			},
 			{
-				"title": "Node.js",
-				"value": 86,
+				"value": "Node.js",
+				"level": 86,
 				"source": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original-wordmark.svg"
 			},
 			{
-				"title": "React.js",
-				"value": 70,
+				"value": "React.js",
+				"level": 70,
 				"source": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
 			},
 			{
-				"title": "Express.js",
-				"value": 80,
+				"value": "Express.js",
+				"level": 80,
 				"source": "ExpressLogo"
 			},
 			{
-				"title": "MongoDB",
-				"value": 80,
+				"value": "MongoDB",
+				"level": 80,
 				"source": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg"
 			},
 			{
-				"title": "AWS",
-				"value": 60,
+				"value": "AWS",
+				"level": 60,
 				"source": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-plain-wordmark.svg"
 			},
 			{
-				"title": "SQL",
-				"value": 80
+				"value": "SQL",
+				"level": 80
 			},
 			{
-				"title": "C#",
-				"value": 60,
+				"value": "C#",
+				"level": 60,
 				"source": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg"
 			},
 			{
-				"title": "Python",
-				"value": 60,
+				"value": "Python",
+				"level": 60,
 				"source": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
 			},
 			{
-				"title": "React Native",
-				"value": 70,
+				"value": "React Native",
+				"level": 70,
 				"source": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
 			},
 			{
-				"title": "Angular.js",
-				"value": 50,
+				"value": "Angular.js",
+				"level": 50,
 				"source": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg"
 			},
 			{
-				"title": "Unity",
-				"value": 60,
+				"value": "Unity",
+				"level": 60,
 				"source": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/unity/unity-original.svg"
 			},
 			{
-				"title": "Google cloud",
-				"value": 50,
+				"value": "Google cloud",
+				"level": 50,
 				"source": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/googlecloud/googlecloud-original.svg"
 			}
 		]

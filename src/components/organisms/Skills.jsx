@@ -13,8 +13,8 @@ export const Skills = (props) => {
 			{items.map((item, i) => (
 				<SkillItem
 					key={`skill${i}`}
-					title={item.title}
 					value={item.value}
+					level={item.level}
 					selectedStyle={selectedStyle}
 				/>
 			))}

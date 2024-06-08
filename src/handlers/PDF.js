@@ -1,7 +1,8 @@
 import jsPDF from 'jspdf';
 import generatePDF from 'react-to-pdf';
 import { ImageRepository } from './ImageRepository';
-
+import "../assets/fonts/Roboto-Regular-normal";
+import "../assets/fonts/Roboto-Black-normal";
 export class PDF{
     
     static captureFromHTML = (ref, filename) =>{
@@ -21,7 +22,7 @@ export class PDF{
         });
     }
     static generateCV = (cv) =>{
-        const pdfGen = new PDFGen(cv);
+        const pdfGen = new PDFGen(cv, "Roboto");
         pdfGen.writeDoc();
     }
 
@@ -45,7 +46,7 @@ class PDFGen {
         this.doc = new jsPDF();
         this.rows ={
             left: 10,
-            right: 10
+            right: 16
         }
         this.font = font;
         this.language = cv.language;
@@ -64,27 +65,79 @@ class PDFGen {
     }
     writeDoc(){
         this.writeLeft();
+        this.writeRight();
         this.doc.save('CV.pdf');
     }
     
     writeLeft(){
+        const colName = "left";
         const col = this.COL_TILE.LEFT;
         const size = this.COL_SIZE.LEFT;
         //avatar
         this.doc.addImage(ImageRepository[this.image], col+5, this.rows.left, size-10, size-10);
         this.rows.left += size - 10 + this.SPACE.BLOCK;
-        this.writeListWithIcons(this.contactInformation, col, "left", size);
-
-    }
-    writeListWithIcons(block, col, row, size){
+        this.writeList(this.contactInformation, col, colName, size);
+        this.writeList(this.links, col, colName, size);
+        this.writeList(this.languages, col, colName, size);
+        this.writeList(this.skills, col, colName, size);
+        this.writeList(this.hobbies, col, colName, size);
+    }  
+    writeRight(){
+        const colName = "right";
+        const col = this.COL_TILE.RIGHT;
+        const size = this.COL_SIZE.RIGHT;
         this.doc.setFont(this.font, 'bold');
         this.doc.setFontSize(this.TITLE_SIZE);
-        this.writeLine(block.title, col, row);
+        this.writeLine(this.profile.title, col, colName, size);
+        this.doc.setFontSize(10);
+        this.doc.setFont(this.font, 'normal');
+        this.writeLine(this.profile.value, col, colName, size);
+        this.rows.right += (this.SPACE.ITEM*2);
+        this.writeList(this.experience, col, colName, size, "job");
+        this.writeList(this.education, col, colName, size, "education");
+        this.writeList(this.courses, col, colName, size, "education");
+    }  
+
+    writeList(block, col, row, size, type = "line"){
+        this.doc.setFont(this.font, 'bold');
+        this.doc.setFontSize(this.TITLE_SIZE);
+        this.writeLine(block.title, col, row,size);
         this.doc.setFontSize(10);
         this.doc.setFont(this.font, 'normal');
         for (const item of block.items){
-            this.writeLine(item.value, col, row, size)
+            this.createBlock(item, col, row, size, type)
         }
+        this.rows[row] += 3;
+    }
+
+    createBlock(item, col, row, size, type){
+        const blocks = {
+            line: ()=>this.writeLine(item.value, col, row, size),
+            job: ()=>this.writeJob(item, col, row, size), 
+            education:()=> this.writeEducation(item, col, row, size),
+        }
+        return blocks[type]();
+    }
+
+    writeJob(data, col, row, size){
+        this.doc.setFont(this.font, 'bold');
+        this.doc.setFontSize(11);
+        this.writeLine(data.title, col, row, size);
+        this.doc.setFontSize(10);
+        this.writeLine(`${data.company}(${data.date})`, col, row, size);
+        this.doc.setFontSize(10);
+        this.doc.setFont(this.font, 'normal');
+        this.writeLine(data.description, col, row, size);
+        this.rows[row] += this.SPACE.ITEM+2;
+    }
+
+    writeEducation(data, col, row, size){
+        this.doc.setFont(this.font, 'bold');
+        this.doc.setFontSize(12);
+        this.writeLine(data.title, col, row, size);
+        this.doc.setFont(this.font, 'normal');
+        this.doc.setFontSize(10);
+        this.writeLine(`${data.institution}(${data.date})`, col, row, size);
     }
 
     writeLine (data, col, row, size) {

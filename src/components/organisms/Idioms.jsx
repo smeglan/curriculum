@@ -12,7 +12,7 @@ export const Idioms = (props) => {
 				{items.map((item, i) => (
 					<Idiom
 						key={`${title}${i}`}
-						language={item.language}
+						language={item.value}
 						level={item.level}
 						selectedStyle={selectedStyle}
 					/>

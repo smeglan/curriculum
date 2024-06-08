@@ -3,7 +3,6 @@ import { Subtitle, Label } from "../atoms";
 
 export const EducationItem = (props) => {
 	const { title, source, date, institution, location } = props;
-	console.log(source)
 	return (
 		<Grid xs={12} item={true}>
 			<Grid container marginBottom={0}>

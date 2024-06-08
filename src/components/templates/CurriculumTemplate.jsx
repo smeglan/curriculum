@@ -1,7 +1,6 @@
 import { Grid } from "@mui/material";
 import {
 	PresentationBanner,
-	List,
 	ListWithIcons,
 	Idioms,
 	Summary,
@@ -43,7 +42,7 @@ export const CurriculumTemplate = (props) => {
 	return (
 		<Grid>
 			<Grid style={{ backgroundColor: "#171717", marginBottom: 2 }}>
-				<CustomButton text="TEST" startIcon="Print" onClick={Test}/>
+				<CustomButton text="Text" startIcon="Print" onClick={Test}/>
 				<OptionBar filename={`${name} - CV`} pdfTarget={curriculumRef} language={language} changeLanguage={changeLanguage}/>
 			</Grid>
 			<Grid ref={curriculumRef} id="curriculum" container>
@@ -65,7 +64,7 @@ export const CurriculumTemplate = (props) => {
 						selectedStyle={leftStyle}
 					/>
 					<Skills title={skills.title} items={skills.items} selectedStyle="skills" />
-					<List title={hobbies.title} items={hobbies.items} selectedStyle={leftStyle} />
+					<ListWithIcons title={hobbies.title} items={hobbies.items} selectedStyle={leftStyle} />
 				</Grid>
 				<Grid md={9} lg={10} item={true} style={{backgroundColor:"white"}}>
 					<PresentationBanner name={name} position={position} />
