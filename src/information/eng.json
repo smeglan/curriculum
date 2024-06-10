@@ -1,7 +1,10 @@
 {
 	"language": "eng",
 	"image": "Avatar",
-	"curriculum": "https://curriculumfinal.vercel.app/eng",
+	"curriculum": {
+		"value":"See more in: ",
+		"url":"https://curriculumfinal.vercel.app/eng"
+	},
 	"name": "SEBASTIÁN NOREÑA MEGLAN",
 	"position": "COMPUTER AND SYSTEMS ENGINEER",
 	"contactInformation": {
@@ -22,7 +25,7 @@
 		"items": [
 			{
 				"type": "LinkedIn",
-				"value": "Sebastian Noreña",
+				"value": "/sebastian-norea-meglan",
 				"url": "https://www.linkedin.com/in/sebastian-norea-meglan/"
 			},
 			{
@@ -83,20 +86,20 @@
 			{
 				"title": "Backend Junior developer",
 				"company": "Condorlabs - Remote",
-				"date": "Aug 2021 Jan 2023",
-				"description": "► Development and support of medical personnel license verification systems for hospitals in the United States of America."
+				"date": "Aug 2021 - Jan 2023",
+				"description": "Development and support of medical personnel license verification systems for hospitals in the United States of America."
 			},
 			{
 				"title": "Software developer",
 				"company": "Desarrollo Eficaz - Remote",
-				"date": "July 2020 Oct 2020",
-				"description": "► Website development with integration payU for remote tattoo artists."
+				"date": "July 2020 - Oct 2020",
+				"description": "Website development with integration payU for remote tattoo artists."
 			},
 			{
 				"title": "Software developer engineer",
 				"company": "Reactiva soporte y desarrollo - Manizales",
-				"date": "Jun 2019 Aug 2021",
-				"description": "► Development, maintenance, support and integration of web applications, payment gateways and mobile applications based on Odoo, React.js and React Native."
+				"date": "Jun 2019 - Aug 2021",
+				"description": "Development, maintenance, support and integration of web applications, payment gateways and mobile applications based on Odoo, React.js and React Native."
 			}
 		]
 	},
@@ -149,6 +152,16 @@
 				"source": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
 			},
 			{
+				"value": "HTML",
+				"level": 80,
+				"source": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+			},
+			{
+				"value": "CSS",
+				"level": 70,
+				"source": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+			},
+			{
 				"value": "Typescript",
 				"level": 80,
 				"source": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"
@@ -174,13 +187,13 @@
 				"source": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg"
 			},
 			{
+				"value": "SQL",
+				"level": 80
+			},
+			{
 				"value": "AWS",
 				"level": 60,
 				"source": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-plain-wordmark.svg"
-			},
-			{
-				"value": "SQL",
-				"level": 80
 			},
 			{
 				"value": "C#",
@@ -193,19 +206,14 @@
 				"source": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
 			},
 			{
+				"value": "PHP",
+				"level": 60,
+				"source": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
+			},
+			{
 				"value": "React Native",
 				"level": 70,
 				"source": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
-			},
-			{
-				"value": "Angular.js",
-				"level": 50,
-				"source": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg"
-			},
-			{
-				"value": "Unity",
-				"level": 60,
-				"source": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/unity/unity-original.svg"
 			},
 			{
 				"value": "Google cloud",

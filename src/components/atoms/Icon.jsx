@@ -5,7 +5,8 @@ import {
 	GitHub,
 	LinkedIn,
 	Print,
-	Language
+	Language,
+	Camera
 } from "@mui/icons-material";
 
 export const Icon = (props) => {
@@ -24,7 +25,7 @@ export const Icon = (props) => {
 		Phone: Phone,
 		Print: Print,
 		Smartphone: Smartphone,
-
+		Camera: Camera
 	};
 	if (isDevIcon) {
 		return <img selectedStyle={{ width: size || `${size}rem` }} src={source} alt={`${alt}`} />;
