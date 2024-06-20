@@ -70,6 +70,7 @@ export const CurriculumTemplate = (props) => {
 						<Courses title={courses.title} items={courses.items} />
 					</Grid>
 				</Grid>
-			</Grid></Grid>
+			</Grid>
+		</Grid>
 	);
 };

@@ -61,7 +61,7 @@
 	},
 	"profile": {
 		"title": "PERFIL",
-		"value": "Ingeniero de sistemas de computación, con 3 años de experiencia como desarrollador principalmente en el stack de tecnologías MERN, con conocimiento en aplicaciones web y APIs, responsable y flexible."
+		"value": "Ingeniero en sistemas informáticos, con 3 años de experiencia como desarrollador, con conocimientos aplicaciones web y móviles, entusiasta de las buenas practicas, los patrones de diseño y principios SOLID. Responsable en el trabajo, flexible, con buenas habilidades para aprender y adaptarse."
 	},
 	"education": {
 		"title": "EDUCACIÓN",
@@ -202,11 +202,6 @@
 			},
 			{
 				"value": "Python",
-				"level": 60,
-				"source": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
-			},
-			{
-				"value": "PHP",
 				"level": 60,
 				"source": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
 			},

@@ -61,7 +61,7 @@
 	},
 	"profile": {
 		"title": "PROFILE",
-		"value": "Computer systems engineer, with 3 years of experience as a fullstack developer mainly in the MERN technology stack, with knowledge of web applications and APIs, responsible and flexible."
+		"value": "Computer systems engineer, with 3 years of experience as a developer, with knowledge of web and mobile applications, enthusiast of good practices, design patterns and SOLID principles. Responsible at work, flexible, with good skills to learn and adapt."
 	},
 	"education": {
 		"title": "EDUCATION",
@@ -202,11 +202,6 @@
 			},
 			{
 				"value": "Python",
-				"level": 60,
-				"source": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
-			},
-			{
-				"value": "PHP",
 				"level": 60,
 				"source": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
 			},
