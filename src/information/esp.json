@@ -8,7 +8,7 @@
 	"name": "SEBASTIÁN NOREÑA MEGLAN",
 	"position": "INGENIERO DE SISTEMAS Y COMPUTACIÓN",
 	"contactInformation": {
-		"title": "INFORMACIÓN",
+		"title": "CONTACTO",
 		"items": [
 			{
 				"type": "Phone",
@@ -44,7 +44,7 @@
 			},
 			{
 				"value": "Ingles",
-				"level": "B2 - Intermedio"
+				"level": "B1 - Intermedio"
 			},
 			{
 				"value": "Japonés",

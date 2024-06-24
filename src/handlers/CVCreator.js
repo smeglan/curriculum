@@ -15,12 +15,13 @@ export class CVCreator {
         BLOCK: 8,
         ITEM: 5
     };
-    constructor(cv, documentTitle="CV", font=undefined){
+    constructor(cv, documentTitle="CV", font=undefined, hasPhoto=true){
         this.doc = new jsPDF();
         this.rows ={
             left: 10,
             right: 16
         }
+        this.hasPhoto = hasPhoto;
         this.documentTitle = documentTitle;
         this.font = font;
         this.language = cv.language;
@@ -53,8 +54,12 @@ export class CVCreator {
         this.doc.setDrawColor(25, 25, 25);
         this.doc.setFillColor(25, 25, 25);
         this.doc.rect(col-3, this.rows.left-3, size+8, 250, "F");
-        this.doc.addImage(ImageRepository[this.image+"Rounded"], col+5, this.rows.left, size-10, size-10);
-        this.rows.left += size - 10 + this.SPACE.BLOCK;
+        if(this.hasPhoto){
+            this.doc.addImage(ImageRepository[this.image+"Rounded"], col+5, this.rows.left, size-10, size-10);
+            this.rows.left += size - 10 + this.SPACE.BLOCK;
+        }else{
+            this.rows.left += 10;
+        }
         this.doc.setTextColor(255, 255, 255);
         this.writeList(this.contactInformation, col, colName, size, "line", true);
         this.writeList(this.links, col, colName, size, "line", true);
